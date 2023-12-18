@@ -71,7 +71,6 @@ button {
 }
 
 section,
-.nav-content,
 .hero,
 .links-footer {
     width: 85%;
@@ -297,8 +296,34 @@ form p{
 #eyeIconClose{
     display: none;
 }
+
+#sides {
+    overflow: hidden; 
+}
+
+#sides:hover {
+    overflow: auto; 
+}
+#sides::-webkit-scrollbar {
+    width: 2px; 
+}
+
+#sides::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); 
+}
+
+#sides::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color); 
+}
+
+#sides::-webkit-scrollbar-track {
+    background-color: var(--nav);
+}
+
 .custom-menu span{
+    font-size: 12px;
     font-weight: 500;
+    color: var(--sub-text-color);
 }
 .custom-menu{
     padding: 0.7em;
