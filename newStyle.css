@@ -327,13 +327,15 @@ form p {
 #eyeIconClose {
     display: none;
 }
+/* sidebar */
 
 #sides {
     background-color: var(--nav);
     border-right: 0.5px solid var(--border-color);
-    height: calc(100vh - 83px);
     padding: 0.5em;
     overflow: hidden;
+    height: calc(100vh - 83px);
+
 }
 
 #sides:hover {
@@ -372,17 +374,26 @@ aside{
     background-color: var(--hover);
 }
 @media screen and (max-width: 1024px) {
-    #sides {
-        display: none;
-    }
+   aside{
+    display: none;
+   }
 }
 /* ===============main============= */
 main{
-    flex: 1 auto;
+   width: 100%;
+  
+    overflow: auto;
 }
+@media screen and (max-width: 1024px) {
+    main{
+        overflow-x: auto;
+    }
+ }
 .top-links{
     font-size: 13px;
     font-weight: 600;
+    white-space: nowrap;
+
 }
 .top-links a{
     color: var(--primary-color);
@@ -405,6 +416,7 @@ opacity: 1;
     background-color: var(--bg-color);
     color: var(--text-color);
     cursor: pointer;
+    white-space: nowrap;
 }
 .admin-input svg{
     color: var(--sub-text-color);
@@ -428,17 +440,20 @@ table {
     margin-bottom: 20px;
     background-color: var(--bg-color);
     color: var(--text-color);
+   
+
     
 }
 
 
 thead{
+
     font-size: 14px;
     color: var(--sub-text-color);
 }
 th, td {
     padding: 12px;
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     text-align: left;
 }
 td{
