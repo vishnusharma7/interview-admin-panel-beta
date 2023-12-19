@@ -381,14 +381,9 @@ aside{
 /* ===============main============= */
 main{
    width: 100%;
-  
-    overflow: auto;
+   overflow: auto;
 }
-@media screen and (max-width: 1024px) {
-    main{
-        overflow-x: auto;
-    }
- }
+
 .top-links{
     font-size: 13px;
     font-weight: 600;
@@ -440,7 +435,8 @@ table {
     margin-bottom: 20px;
     background-color: var(--bg-color);
     color: var(--text-color);
-   
+    overflow: auto;
+    white-space: nowrap;
 
     
 }
