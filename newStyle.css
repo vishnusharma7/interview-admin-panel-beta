@@ -376,6 +376,16 @@ aside{
     display: none;
    }
 }
+@media screen and (max-width:480px) {
+    #nav-mobile-icon{
+        margin-right: 0px !important;
+    }
+    .dark-mode-toggle{
+        top: 0.65em !important;
+        right: 7.2em !important;
+    }
+
+ }
 
 /* ===============main============= */
 main{
