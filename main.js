@@ -4,16 +4,17 @@ AOS.init( {
     duration: 500,// values from 0 to 3000, with step 50ms
   });
 // ---------------------hamburger---------------------
-const toggleBtn = document.getElementById("mobile-menu-icon");
-const toggleBtnIcons = toggleBtn.querySelectorAll("svg");
-const dropDownMenu = document.querySelector(".dropdown-menu");
+document.addEventListener('DOMContentLoaded', function () {
+  var mobileMenuIcon = document.getElementById('mobile-menu-icon');
+  var asideElement = document.querySelector('aside');
 
-toggleBtn.onclick = function () {
-  dropDownMenu.classList.toggle("open");
-  const isOpen = dropDownMenu.classList.contains("open");
-  toggleBtnIcons[0].style.display = isOpen ? "none" : "flex";
-  toggleBtnIcons[1].style.display = isOpen ? "flex" : "none";
-};
+  if (mobileMenuIcon && asideElement) {
+      mobileMenuIcon.addEventListener('click', function () {
+          asideElement.style.display = (asideElement.style.display === 'none' || asideElement.style.display === '') ? 'flex' : 'none';
+      });
+  }
+});
+
 // ---------------------FAQ----------------------------
 document.addEventListener("DOMContentLoaded", function () {
   const questionBoxes = document.querySelectorAll(".question-box");
@@ -25,13 +26,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-// ------------nav on scrollbar------------
-window.onscroll = function () {
-  let scroll = document.documentElement.scrollTop || document.body.scrollTop;
-  if (scroll > 200) {
-    document.querySelector(".nav").classList.add("sticky-nav");
-  } else {
-    document.querySelector(".nav").classList.remove("sticky-nav");
-  }
-};
-

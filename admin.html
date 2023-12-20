@@ -25,7 +25,7 @@
     <!-- navbar -->
     <div class="nav" style="border-bottom:0.5px solid var(--border-color);">
         <div class="nav-content flex between middle" data-aos="fade-down">
-            <div class="mobile-view-menu-icon flex middle" id="mobile-menu-icon" style="display: none;">
+            <div class="mobile-view-menu-icon flex middle" id="mobile-menu-icon" style="display: none; margin-right:0.5em;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
                     viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -42,37 +42,85 @@
                     <img src="assets/logos.png" alt="" style="max-width:20%">
                 </div>
             </a>
-            <div class="flex middle" style="gap: 3em;">
-                <div class="links flex" style="font-weight:600; gap:2em; ">
-                    <a href="index.html">Home</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
-                <div class="social-links flex animate__animated animate__fadeInDown" style="gap: 1em;">
+            <div class="flex middle" style="gap: 1em;margin-right:2em">
 
-                    <a href="#" class="social-icons">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-instagram" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icons">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path
-                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="social-icons">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path
-                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                        </svg>
-                    </a>
+                <div class="nav-icon flex middle dropdown-holder"
+                    style="padding:0.7em; background-color: var(--bg-box-color); border-radius:2em; display:flex;align-items: center; transition: var(--transition)">
+                    <svg class="dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+                    </svg>
+                    <!-- dropdown-content -->
+                    <div class=" dropdown" style="white-space: nowrap;">
+                        <div class="flex column gap" style="font-size: 14px; width:200px;">
+                            <h4 style="color:var(--sub-text-color)">Notification</h4>
+                            <a href="#" style="color:var(--text-color)">
+                                <div class="flex column ">
+                                    <a class="flex middle gap custom-menu" href="#" style="color:var(--text-color);">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-person-square" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                            <path
+                                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                        </svg><span>Profile</span></a>
+                                    <a class=" flex middle gap custom-menu" href="#" style="color:var(--text-color); ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-person-square" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                            <path
+                                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                        </svg><span>Dashboard</span></a>
+                                    <a class=" flex middle gap custom-menu" href="#" style="color:var(--text-color); ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-person-square" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                            <path
+                                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                        </svg><span>Activity</span></a>
+                                </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="profile-image" style="cursor:pointer">
-                    <img src="assets/profile9.webp" alt="" style="border-radius: 50%;">
+                <div class="profile-image dropdown-holder" style="cursor:pointer">
+                    <img class="dropdown-trigger" src="assets/profile9.webp" alt="" style="border-radius: 50%;">
+                    <!-- dropdown content -->
+                    <div class="dropdown" style="white-space: nowrap;">
+                        <div class="flex  column " style="font-size: 14px;width:200px;">
+                            <div class="flex column gap middle">
+                                <img src="assets/profile9.webp" alt="" style="border-radius: 50%;">
+
+                                <h3>Test User</h3>
+                            </div>
+                            <div class="flex column ">
+                                <a class="flex middle gap custom-menu" href="#" style="color:var(--text-color);margin-top:2em ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-square" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path
+                                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                    </svg><span>Profile</span></a>
+                                <a class=" flex middle gap custom-menu" href="#" style="color:var(--text-color); ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-square" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path
+                                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                    </svg><span>Dashboard</span></a>
+                                <a class=" flex middle gap custom-menu" href="#" style="color:var(--text-color); ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-square" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path
+                                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                    </svg><span>Activity</span></a>
+                            </div>
+
+                            <div class="flex center admin-input"
+                                style="color:#ffffff; background-color:var(--primary-color); border-radius:0.5em; margin-top:2em">
+                                Sign out</div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -81,7 +129,7 @@
     </div>
     <!-- sidebar -->
     <div class="flex">
-        <aside>
+        <aside class="">
             <div class="flex column gap" id="sides">
                 <div class="flex" style="padding: 0.7em;padding-bottom:0em">
                     <h4 style="font-weight: 500;">Accounts</h4>
@@ -295,12 +343,11 @@
 
         <!-- main content -->
         <main>
-            <div class="flex column " style="padding: 2em;height: calc(100vh - 83px);
-            " >
+            <div class="flex column" style="padding: 2em 2em 0em 2em;height:calc(100vh - 100px); ">
                 <div class="flex">
                     <h2>Interviews</h2>
                 </div>
-                <div class=" flex gap" style="margin-top:1.5em; margin-bottom:0.5em">
+                <div class=" flex gap wrap" style=" margin-top:1.5em; margin-bottom:0.5em">
                     <div class="top-links ">
                         <a href="">All <span>(205)</span></a>
                     </div>
@@ -319,16 +366,19 @@
 
                 </div>
                 <div class="flex middle gap wrap" style="margin-top: 0.5em;">
-                    <div class="admin-input flex middle " style="width:fit-content;gap:0.5em">
-                       
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                              </svg>
-                            <input  type="search" name="" id="" placeholder="Search" style="color: var(--text-color);font-size:16px">
-                     
+                    <div class="admin-input flex middle " style="width:fit-content;gap:0.5em; ">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                        <input type="search" name="" id="" placeholder="Search"
+                            style="color: var(--text-color);font-size:14px">
+
                     </div>
-                    <div class="filter-btn flex gap">
-                        <select class="admin-input" name="" id="" >
+                    <div class="filter-btn flex">
+                        <select class="admin-input" name="" id="">
                             <option value="Country" selected>Country</option>
                             <option value="India">India</option>
                             <option value="USA">USA</option>
@@ -345,22 +395,25 @@
                         <div class="flex admin-input">
                             <div>More filter</div>
                         </div>
-                       
-
                     </div>
-                    <div class="flex gap middle" >
+                    <div class="flex gap middle">
                         <div class="flex middle gap" style="cursor: pointer;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-up" viewBox="0 0 16 16">
-                                <path d="M8 11a.5.5 0 0 0 .5-.5V6.707l1.146 1.147a.5.5 0 0 0 .708-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L7.5 6.707V10.5a.5.5 0 0 0 .5.5"/>
-                                <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-file-arrow-up" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 11a.5.5 0 0 0 .5-.5V6.707l1.146 1.147a.5.5 0 0 0 .708-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L7.5 6.707V10.5a.5.5 0 0 0 .5.5" />
+                                <path
+                                    d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1" />
+                            </svg>
                             <p>Export</p>
                         </div>
                         <div class="button admin-input flex middle gap" style="background-color: var(--primary-color);">
-                            <svg style="color: #ffffff;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                              </svg>
-                            <p>Add candidate</p>
+                            <svg style="color: #ffffff;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                            </svg>
+                            <p style="color: #ffffff;">Add candidate</p>
                         </div>
                     </div>
                 </div>
@@ -369,8 +422,8 @@
                 <table>
                     <thead>
                         <tr>
-                          
-                            <th><input type="checkbox" style="margin-right: 0.5em;" >CUSTOMER</th>
+
+                            <th><input type="checkbox" style="margin-right: 0.5em;">CUSTOMER</th>
                             <th>EMAIL</th>
                             <th>ORDERS</th>
                             <th>TOTAL-SPENT</th>
@@ -381,7 +434,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -390,7 +443,7 @@
                             <td>Dec 12, 12:56</td>
                         </tr>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -399,7 +452,7 @@
                             <td>Dec 12, 12:56</td>
                         </tr>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -408,7 +461,7 @@
                             <td>Dec 12, 12:56</td>
                         </tr>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -417,7 +470,7 @@
                             <td>Dec 12, 12:56</td>
                         </tr>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -426,7 +479,7 @@
                             <td>Dec 12, 12:56</td>
                         </tr>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -435,7 +488,7 @@
                             <td>Dec 12, 12:56</td>
                         </tr>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -444,7 +497,7 @@
                             <td>Dec 12, 12:56</td>
                         </tr>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -453,7 +506,7 @@
                             <td>Dec 12, 12:56</td>
                         </tr>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -462,7 +515,7 @@
                             <td>Dec 12, 12:56</td>
                         </tr>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -471,7 +524,7 @@
                             <td>Dec 12, 12:56</td>
                         </tr>
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -479,8 +532,9 @@
                             <td>34 min ago</td>
                             <td>Dec 12, 12:56</td>
                         </tr>
+
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -488,8 +542,9 @@
                             <td>34 min ago</td>
                             <td>Dec 12, 12:56</td>
                         </tr>
+
                         <tr>
-                            <td ><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
+                            <td><input type="checkbox" style="margin-right: 0.5em;">avatar Carry Anna</td>
                             <td>as@gmail.com</td>
                             <td>89</td>
                             <td>$23,987</td>
@@ -497,10 +552,52 @@
                             <td>34 min ago</td>
                             <td>Dec 12, 12:56</td>
                         </tr>
+
+
+
                         <!-- we can add here more -->
                     </tbody>
                 </table>
+                <div class="flex middle between" style="padding-bottom:2em">
+                    <div class="flex middle gap">
+                        <p class="flex middle"
+                            style="font-size: 13px;font-weight:500;color:var(--sub-text-color);gap:0.5em"> 1 to 10
+                            <span>item of</span> 15
+                        </p>
+                        <a class="flex middle"
+                            style="font-size: 13px;font-weight:500;color:var(--primary-color);gap:0.5em" href="">
+                            <span>View all</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex middle">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                        </a>
+                        <a class="footer-links flex middle center"
+                            style="font-size: 13px;font-weight:500;color:var(--sub-text-color);gap:0.5em">1</a>
+                        <a class="footer-links flex middle center"
+                            style="font-size: 13px;font-weight:500;color:var(--sub-text-color);gap:0.5em">2</a>
+                        <a class="flex middle"
+                            style="font-size: 13px;font-weight:500;color:var(--primary-color);gap:0.5em" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </main>
     </div>
 
