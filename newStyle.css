@@ -490,6 +490,7 @@ thead{
     position: sticky;
     top: 0;
     border: none;
+    cursor: pointer;
    
 }
 

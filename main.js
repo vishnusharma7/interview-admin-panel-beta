@@ -29,3 +29,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Table head sticky on scroll
+document.addEventListener("DOMContentLoaded", function() {
+  const table = document.querySelector('table');
+  const headers = table.querySelectorAll('th[data-sort]');
+  let sortOrder = {};
+
+  headers.forEach(header => {
+      // Create and append arrow element
+      const arrowElement = document.createElement('span');
+      arrowElement.className = 'sort-arrows';
+
+      header.appendChild(arrowElement);
+
+      header.addEventListener('click', function() {
+          const column = this.getAttribute('data-sort');
+          sortOrder[column] = sortOrder[column] === 'asc' ? 'desc' : 'asc';
+
+          // Reset arrows for all headers
+          headers.forEach(h => {
+              if (h !== header) {
+                  h.querySelector('.sort-arrows').innerHTML = ' ';
+              }
+          });
+
+          // Set arrow based on current sort order
+          this.querySelector('.sort-arrows').innerHTML = sortOrder[column] === 'asc' ? ' &#9660;' : ' &#9650;';
+
+          sortTable(table, column, sortOrder[column]);
+      });
+  });
+
+  function sortTable(table, column, order) {
+      const index = Array.from(table.tHead.rows[0].cells).findIndex(th => th.getAttribute('data-sort') === column);
+      const rows = Array.from(table.tBodies[0].rows);
+
+      rows.sort((a, b) => {
+          const aValue = a.cells[index].textContent.trim();
+          const bValue = b.cells[index].textContent.trim();
+
+          if (!isNaN(aValue) && !isNaN(bValue)) {
+              return order === 'asc' ? aValue - bValue : bValue - aValue;
+          } else {
+              return order === 'asc' ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+          }
+      });
+
+      // Remove existing rows
+      rows.forEach(row => table.tBodies[0].appendChild(row));
+
+      // Append sorted rows
+      table.tBodies[0].appendChild(...rows);
+  }
+});
+
