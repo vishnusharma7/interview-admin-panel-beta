@@ -39,6 +39,34 @@
 
 
 }
+/* typography */
+.f-11{
+    font-size: 11px;
+}
+.f-10{
+    font-size: 10px;
+}
+.f-12{
+    font-size: 12px;
+}
+.f-13{
+    font-size: 13px;
+}
+.f-14{
+    font-size: 14px;
+}
+.f-16{
+    font-size: 16px;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-500{
+    font-weight: 500;
+}
+.border{
+    border: 1px solid var(--border-color);
+}
 
 html,
 body {
@@ -440,7 +468,7 @@ input{
 
 /* table */
 table {
-    position: relative;
+   position: relative;
     margin-top: 2em;
     width: 100%;
     border-collapse: collapse;
@@ -513,16 +541,16 @@ tr td:nth-child(2){
     right: 0;
     border: 1px solid var(--border-color);
     background-color: var(--nav);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: var(--box-shadow);
     z-index: 9999;
     
 }
 #notification-drop{
-   
+    overflow: auto;
     height:500px;
     width:400px;
-    overflow: auto;
+  
     color: var(--text-color);
 }
 @media screen and (max-width:768px) {
@@ -531,16 +559,29 @@ tr td:nth-child(2){
     
     }
 }
-.hover-effect{
+
+.hover-effect,.hover-border{
     transition: 0.2s;
+}
+.hover-border:hover{
+border: 1px solid var(--border-color);
+border-radius: 0.5em;
 }
 .hover-effect:hover{
 background-color: var(--hover);
 }
 .notification-box{
-    padding: 1em;
-    gap: 0.7em;
+    padding: 1.2em 1em;
+    gap: 1em;
     border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+}
+.notification-box:hover{
+    background-color: var(--hover);
+}
+.notification-box h4{
+    font-size: 12px;
+    font-weight: 600;
 }
 .dropdown-holder:hover .dropdown,
 .dropdown-trigger:focus+.dropdown {

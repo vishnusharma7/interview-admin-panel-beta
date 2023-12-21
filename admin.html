@@ -54,11 +54,12 @@
                     </svg>
                     <!-- dropdown-content -->
                     <div class=" dropdown" id="notification-drop">
-                        <div class="flex column gap" style="font-size: 14px; ">
+                        <div class="flex column" style="font-size: 14px; ">
                             <div class="flex middle between"
-                                style="border-bottom: 1px solid var(--border-color);padding:0.5em;position: sticky;top:0;background-color:var(--nav)">
-                                <h4>Notification</h4>
-                                <a href="" style="color: var(--primary-color);font-weight:500">Mark all as read</a>
+                                style="border-bottom: 1px solid var(--border-color);padding:0.6em;position: sticky;top:0;background-color:var(--nav)">
+                                <h4 style="font-size: 16px;font-weight:600;">Notification</h4>
+                                <a href="" style="font-weight:14px;color: var(--primary-color);font-weight:500">Mark all
+                                    as read</a>
                             </div>
                             <div class="notifications-content">
                                 <div class="notification-box flex ">
@@ -69,30 +70,38 @@
                                     </div>
                                     <div class="flex column" style="gap: 0.5em;width:100%;">
                                         <h4>Jessi Samson</h4>
-                                        <div class="flex middle between">
-                                            <div class="flex  s-gap">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        <div class="flex top  between">
+                                            <div class="flex middle  s-gap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                                     fill="currentColor" class="bi bi-chat-dots-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
                                                         d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
                                                 </svg>
-                                                <p style="font-size: 12px;">Mentioned you in a comment <span>10m</span>
+                                                <p class="flex middle gap" style="font-size: 12px;font-weight:500">
+                                                    Mentioned you in a comment <span
+                                                        style="font-size: 9px;font-weight:600;color:var(--sub-text-color)">10m</span>
                                                 </p>
 
                                             </div>
-                                            <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" fill="currentColor" class="bi bi-three-dots"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
-                                            </svg>
+                                            <div class="flex middle" style="padding: 0.5em 1.2em;">
+                                                <svg   style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg"
+                                                    width="13" height="13" fill="currentColor" class="bi bi-three-dots"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                                </svg>
+
+                                            </div>
+
+
                                         </div>
-                                        <div class="n-time flex middle" style="gap: 0.5em;margin-top:0.8em">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                        <div class="n-time flex middle"
+                                            style="gap: 0.5em;margin-top:0.2em;color:var(--sub-text-color)">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                                                 <path
-                                                    d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0" />
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                                             </svg>
                                             <p style="font-weight: 600;font-size:13px">10:41 AM <span
                                                     style="font-weight: 400;">August 7,2021</span></p>
@@ -108,30 +117,36 @@
                                     </div>
                                     <div class="flex column" style="gap: 0.5em;width:100%;">
                                         <h4>Jessi Samson</h4>
-                                        <div class="flex middle between">
-                                            <div class="flex s-gap">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        <div class="flex top  between">
+                                            <div class="flex middle  s-gap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                                     fill="currentColor" class="bi bi-chat-dots-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
                                                         d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
                                                 </svg>
-                                                <p style="font-size: 12px;">Mentioned you in a comment <span>10m</span>
+                                                <p class="flex middle gap" style="font-size: 12px;font-weight:500">
+                                                    Mentioned you in a comment <span
+                                                        style="font-size: 9px;font-weight:600;color:var(--sub-text-color)">10m</span>
                                                 </p>
 
                                             </div>
-                                            <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" fill="currentColor" class="bi bi-three-dots"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
-                                            </svg>
+                                            <div class="flex middle" style="padding: 0.5em 1.2em;">
+                                                <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg"
+                                                    width="13" height="13" fill="currentColor" class="bi bi-three-dots"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                                </svg>
+                                            </div>
+
                                         </div>
-                                        <div class="n-time flex middle" style="gap: 0.5em;margin-top:0.8em">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                        <div class="n-time flex middle"
+                                            style="gap: 0.5em;margin-top:0.2em;color:var(--sub-text-color)">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                                                 <path
-                                                    d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0" />
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                                             </svg>
                                             <p style="font-weight: 600;font-size:13px">10:41 AM <span
                                                     style="font-weight: 400;">August 7,2021</span></p>
@@ -147,30 +162,36 @@
                                     </div>
                                     <div class="flex column" style="gap: 0.5em;width:100%;">
                                         <h4>Jessi Samson</h4>
-                                        <div class="flex middle between">
-                                            <div class="flex  s-gap">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        <div class="flex top  between">
+                                            <div class="flex middle  s-gap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                                     fill="currentColor" class="bi bi-chat-dots-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
                                                         d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
                                                 </svg>
-                                                <p style="font-size: 12px;">Mentioned you in a comment <span>10m</span>
+                                                <p class="flex middle gap" style="font-size: 12px;font-weight:500">
+                                                    Mentioned you in a comment <span
+                                                        style="font-size: 9px;font-weight:600;color:var(--sub-text-color)">10m</span>
                                                 </p>
 
                                             </div>
-                                            <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" fill="currentColor" class="bi bi-three-dots"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
-                                            </svg>
+                                            <div class="flex middle" style="padding: 0.5em 1.2em;">
+                                                <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg"
+                                                    width="13" height="13" fill="currentColor" class="bi bi-three-dots"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                                </svg>
+                                            </div>
+
                                         </div>
-                                        <div class="n-time flex middle" style="gap: 0.5em;margin-top:0.8em">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                        <div class="n-time flex middle"
+                                            style="gap: 0.5em;margin-top:0.2em;color:var(--sub-text-color)">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                                                 <path
-                                                    d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0" />
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                                             </svg>
                                             <p style="font-weight: 600;font-size:13px">10:41 AM <span
                                                     style="font-weight: 400;">August 7,2021</span></p>
@@ -186,30 +207,36 @@
                                     </div>
                                     <div class="flex column" style="gap: 0.5em;width:100%;">
                                         <h4>Jessi Samson</h4>
-                                        <div class="flex middle between">
-                                            <div class="flex  s-gap">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        <div class="flex top  between">
+                                            <div class="flex middle  s-gap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                                     fill="currentColor" class="bi bi-chat-dots-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
                                                         d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
                                                 </svg>
-                                                <p style="font-size: 12px;">Mentioned you in a comment <span>10m</span>
+                                                <p class="flex middle gap" style="font-size: 12px;font-weight:500">
+                                                    Mentioned you in a comment <span
+                                                        style="font-size: 9px;font-weight:600;color:var(--sub-text-color)">10m</span>
                                                 </p>
 
                                             </div>
-                                            <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" fill="currentColor" class="bi bi-three-dots"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
-                                            </svg>
+                                            <div class="flex middle" style="padding: 0.5em 1.2em;">
+                                                <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg"
+                                                    width="13" height="13" fill="currentColor" class="bi bi-three-dots"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                                </svg>
+                                            </div>
+
                                         </div>
-                                        <div class="n-time flex middle" style="gap: 0.5em;margin-top:0.8em">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                        <div class="n-time flex middle"
+                                            style="gap: 0.5em;margin-top:0.2em;color:var(--sub-text-color)">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                                                 <path
-                                                    d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0" />
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                                             </svg>
                                             <p style="font-weight: 600;font-size:13px">10:41 AM <span
                                                     style="font-weight: 400;">August 7,2021</span></p>
@@ -225,30 +252,36 @@
                                     </div>
                                     <div class="flex column" style="gap: 0.5em;width:100%;">
                                         <h4>Jessi Samson</h4>
-                                        <div class="flex middle between">
-                                            <div class="flex  s-gap">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        <div class="flex top  between">
+                                            <div class="flex middle  s-gap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                                     fill="currentColor" class="bi bi-chat-dots-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
                                                         d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
                                                 </svg>
-                                                <p style="font-size: 12px;">Mentioned you in a comment <span>10m</span>
+                                                <p class="flex middle gap" style="font-size: 12px;font-weight:500">
+                                                    Mentioned you in a comment <span
+                                                        style="font-size: 9px;font-weight:600;color:var(--sub-text-color)">10m</span>
                                                 </p>
 
                                             </div>
-                                            <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" fill="currentColor" class="bi bi-three-dots"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
-                                            </svg>
+                                            <div class="flex middle" style="padding: 0.5em 1.2em;">
+                                                <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg"
+                                                    width="13" height="13" fill="currentColor" class="bi bi-three-dots"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                                </svg>
+                                            </div>
+
                                         </div>
-                                        <div class="n-time flex middle" style="gap: 0.5em;margin-top:0.8em">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                        <div class="n-time flex middle"
+                                            style="gap: 0.5em;margin-top:0.2em;color:var(--sub-text-color)">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
                                                 <path
-                                                    d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0" />
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                                             </svg>
                                             <p style="font-weight: 600;font-size:13px">10:41 AM <span
                                                     style="font-weight: 400;">August 7,2021</span></p>
@@ -256,9 +289,101 @@
 
                                     </div>
                                 </div>
+                                <div class="notification-box flex ">
+                                    <div class="p-image">
+                                        <img class="dropdown-trigger" src="assets/profile9.webp" alt=""
+                                            style="border-radius: 2em;">
+
+                                    </div>
+                                    <div class="flex column" style="gap: 0.5em;width:100%;">
+                                        <h4>Jessi Samson</h4>
+                                        <div class="flex top  between">
+                                            <div class="flex middle  s-gap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                    fill="currentColor" class="bi bi-chat-dots-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                                </svg>
+                                                <p class="flex middle gap" style="font-size: 12px;font-weight:500">
+                                                    Mentioned you in a comment <span
+                                                        style="font-size: 9px;font-weight:600;color:var(--sub-text-color)">10m</span>
+                                                </p>
+
+                                            </div>
+                                            <div class="flex middle" style="padding: 0.5em 1.2em;">
+                                                <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg"
+                                                    width="13" height="13" fill="currentColor" class="bi bi-three-dots"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                        <div class="n-time flex middle"
+                                            style="gap: 0.5em;margin-top:0.2em;color:var(--sub-text-color)">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                            </svg>
+                                            <p style="font-weight: 600;font-size:13px">10:41 AM <span
+                                                    style="font-weight: 400;">August 7,2021</span></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="notification-box flex ">
+                                    <div class="p-image">
+                                        <img class="dropdown-trigger" src="assets/profile9.webp" alt=""
+                                            style="border-radius: 2em;">
+
+                                    </div>
+                                    <div class="flex column" style="gap: 0.5em;width:100%;">
+                                        <h4>Jessi Samson</h4>
+                                        <div class="flex top  between">
+                                            <div class="flex middle  s-gap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                    fill="currentColor" class="bi bi-chat-dots-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                                </svg>
+                                                <p class="flex middle gap" style="font-size: 12px;font-weight:500">
+                                                    Mentioned you in a comment <span
+                                                        style="font-size: 9px;font-weight:600;color:var(--sub-text-color)">10m</span>
+                                                </p>
+
+                                            </div>
+                                            <div class="flex middle" style="padding: 0.5em 1.2em;">
+                                                <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg"
+                                                    width="13" height="13" fill="currentColor" class="bi bi-three-dots"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                        <div class="n-time flex middle"
+                                            style="gap: 0.5em;margin-top:0.2em;color:var(--sub-text-color)">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                            </svg>
+                                            <p style="font-weight: 600;font-size:13px">10:41 AM <span
+                                                    style="font-weight: 400;">August 7,2021</span></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                                 <div class="flex center middle"
                                     style="position: sticky;bottom:0; background-color:var(--nav);padding:0.5em;border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color)">
-                                    <p style="color: var(--primary-color);font-weight:600;">Notification history</p>
+                                    <p style="color: var(--primary-color);font-weight:600;font-size:10px">Notification
+                                        history</p>
                                 </div>
                             </div>
 
@@ -275,71 +400,88 @@
 
                                 <h3 style="font-size: 13px;">Test User</h3>
                                 <a class="flex center middle"
-                                    style="padding:0.7em 0em;font-weight:600; font-size:14px;border-radius:0.5em;border: 1px solid var(--border-color);width:100%;">Update
+                                    style="padding:0.7em 0em;font-weight:600; font-size:12px;border-radius:0.5em;border: 1px solid var(--border-color);width:100%;">Update
                                     your status</a>
                             </div>
                             <div class="flex column" style="border-bottom: 1px solid var(--border-color);">
-                            <div class="flex column hover-effect" style="padding: 1em 1.5em;">
-                                <a class="flex middle gap " href="#" style="color:var(--text-color);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                                        class="bi bi-person-square" viewBox="0 0 16 16">
-                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <div class="flex column hover-effect" style="padding: 0.8em 1.5em;">
+                                    <a class="flex middle " href="#" style="color:var(--text-color);gap:0.7em">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                            <path
+                                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                        </svg>
+                                        <span style="font-size: 12px;font-weight:600;">Profile</span></a>
+                                </div>
+                                <div class="flex column hover-effect" style="padding: 0.8em 1.5em;">
+                                    <a class="flex middle " href="#" style="color:var(--text-color);gap:0.7em">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+                                            <path fill-rule="evenodd"
+                                                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3" />
+                                        </svg>
+                                        <span style="font-size: 12px;font-weight:600;">Dashboard</span></a>
+                                </div>
+                                <div class="flex column hover-effect" style="padding: 0.8em 1.5em;">
+                                    <a class="flex middle " href="#" style="color:var(--text-color);gap:0.7em">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1" />
+                                        </svg>
+                                        <span style="font-size: 12px;font-weight:600;">Posts & Activity</span></a>
+                                </div>
+                                <div class="flex column hover-effect" style="padding: 0.8em 1.5em;">
+                                    <a class="flex middle" href="#" style="color:var(--text-color);gap:0.7em">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                                            <path
+                                                d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                                        </svg>
+                                        <span style="font-size: 12px;font-weight:600;">Setting & Privacy</span></a>
+                                </div>
+                                <div class="flex column hover-effect" style="padding: 0.8em 1.5em;">
+                                    <a class="flex middle " href="#" style="color:var(--text-color);gap:0.7em">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a.998.998 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
+                                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                        </svg>
+                                        <span style="font-size: 12px;font-weight:600;">Help Center</span></a>
+                                </div>
+
+                            </div>
+                            <div class="flex column hover-effect"
+                                style="padding: 2em 1.5em; border-bottom:1px solid var(--border-color)">
+                                <a class="flex middle " href="#" style="color:var(--text-color);gap:0.7em;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-add" viewBox="0 0 16 16">
                                         <path
-                                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                            d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                        <path
+                                            d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1z" />
                                     </svg>
-                                    <span style="font-size: 12px;font-weight:600;">Profile</span></a>
+                                    <span style="font-size: 12px;font-weight:600;">Add another account</span></a>
                             </div>
-                            <div class="flex column hover-effect" style="padding: 1em 1.5em;">
-                                <a class="flex middle gap " href="#" style="color:var(--text-color);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
-                                        <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
-                                        <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/>
-                                      </svg>
-                                    <span style="font-size: 12px;font-weight:600;">Dashboard</span></a>
-                            </div>
-                            <div class="flex column hover-effect" style="padding: 1em 1.5em;">
-                                <a class="flex middle gap " href="#" style="color:var(--text-color);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-                                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
-                                      </svg>
-                                    <span style="font-size: 12px;font-weight:600;">Posts & Activity</span></a>
-                            </div>
-                            <div class="flex column hover-effect" style="padding: 1em 1.5em;">
-                                <a class="flex middle gap " href="#" style="color:var(--text-color);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
-                                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-                                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-                                      </svg>
-                                    <span style="font-size: 12px;font-weight:600;">Setting & Privacy</span></a>
-                            </div>
-                            <div class="flex column hover-effect" style="padding: 1em 1.5em;">
-                                <a class="flex middle gap " href="#" style="color:var(--text-color);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
-                                        <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a.998.998 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/>
-                                        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
-                                      </svg>
-                                    <span style="font-size: 12px;font-weight:600;">Help Center</span></a>
-                            </div>
-                            
-                        </div>
-                        <div class="flex column hover-effect" style="padding: 1em 1.5em; border-bottom:1px solid var(--border-color)">
-                            <a class="flex middle gap " href="#" style="color:var(--text-color);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
-                                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
-                                    <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
-                                  </svg>
-                                <span style="font-size: 12px;font-weight:600;">Add another account</span></a>
-                        </div>
 
                             <div class="flex center " style="padding:1.5em;">
-                            <a class="flex center middle s-gap"
-                            style="padding:0.7em 0em;font-weight:600; font-size:14px;border-radius:0.5em;border: 1px solid var(--border-color);width:100%; background-color:var(--bg-color)">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
-                                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                              </svg>
-                            Sign out</a>
-                        </div>
+                                <a class="flex center middle gap"
+                                    style="padding:0.7em 0em;font-weight:600; font-size:14px;border-radius:0.5em;border: 1px solid var(--border-color);width:100%; background-color:var(--bg-color)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                    </svg>
+                                    Sign out</a>
+                            </div>
                         </div>
 
                     </div>
@@ -645,7 +787,7 @@
                 </div>
                 <!-- TABLE CONTENT -->
                 <table>
-                    <thead class="table-head">
+                    <thead>
                         <tr>
 
                             <th><input type="checkbox" style="margin-right: 0.5em;">CUSTOMER</th>
