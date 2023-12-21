@@ -47,6 +47,9 @@
 .w-auto{
     width: auto;
 }
+.s-gap{
+gap: 0.5em;
+}
 .gap{
     gap: 1em;
 }

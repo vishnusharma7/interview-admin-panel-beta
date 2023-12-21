@@ -26,3 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+// Table head sticky on scroll
+window.onscroll = function () {
+  let scroll = document.documentElement.scrollTop || document.body.scrollTop;
+  if (scroll > 100) {
+    document.querySelector(".table-head").classList.add("sticky-table");
+  } else {
+    document.querySelector(".table-head").classList.remove("sticky-table");
+  }
+};

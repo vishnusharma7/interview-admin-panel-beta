@@ -440,6 +440,7 @@ input{
 
 /* table */
 table {
+    position: relative;
     margin-top: 2em;
     width: 100%;
     border-collapse: collapse;
@@ -454,9 +455,18 @@ table {
 
 
 thead{
-
+ 
     font-size: 14px;
     color: var(--sub-text-color);
+    background-color: var(--bg-box-color);
+}
+
+
+.sticky-table{
+    position: fixed;
+    width: 100%;
+    background-color: var(--nav);
+    
 }
 th, td {
     padding: 12px;
@@ -466,7 +476,11 @@ th, td {
 td{
     font-size: 12px;
 }
-
+tr th:nth-child(1),tr td:nth-child(1){
+    padding: 1.1em;
+    display: flex;
+   
+}
 tr td:nth-child(2){
     color: var(--primary-color);
     font-weight: 500;
@@ -482,7 +496,12 @@ tr td:nth-child(2){
     background-color: var(--primary-color);
 }
 
-
+#admin-footer{
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    background-color: var(--bg-color);
+}
 .dropdown-holder {
     position: relative;
 }
@@ -492,17 +511,40 @@ tr td:nth-child(2){
     position: absolute;
     top: 100%;
     right: 0;
-    padding: 2em 1em 2em 1em;
+    border: 1px solid var(--border-color);
     background-color: var(--nav);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     z-index: 9999;
     
 }
-
+#notification-drop{
+   
+    height:500px;
+    width:400px;
+    overflow: auto;
+    color: var(--text-color);
+}
+@media screen and (max-width:768px) {
+    #notification-drop{
+    width: 300px; 
+    
+    }
+}
+.hover-effect{
+    transition: 0.2s;
+}
+.hover-effect:hover{
+background-color: var(--hover);
+}
+.notification-box{
+    padding: 1em;
+    gap: 0.7em;
+    border-bottom: 1px solid var(--border-color);
+}
 .dropdown-holder:hover .dropdown,
 .dropdown-trigger:focus+.dropdown {
-    display: flex;
+    display: block;
 }
 
 
