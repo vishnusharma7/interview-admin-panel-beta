@@ -528,7 +528,10 @@ tr td:nth-child(2){
     color: #FFFFFF;
     background-color: var(--primary-color);
 }
-
+.active {
+    color: #FFFFFF;
+    background-color: var(--primary-color); /* Replace with the actual color if --primary-color is not defined */
+}
 #admin-footer{
     width: 100%;
     position: sticky;
@@ -550,6 +553,26 @@ tr td:nth-child(2){
     box-shadow: var(--box-shadow);
     z-index: 9999;
     
+}
+.popup-container{
+    position: absolute;
+    padding: 2em;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    background-color: var(--nav);
+    border-radius: 0.5em;
+    width: 300px;
+    z-index: 9999;
+    visibility: hidden;
+    transition: 0.2s ease-out; 
+    
+
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
 }
 #notification-drop{
     overflow: auto;

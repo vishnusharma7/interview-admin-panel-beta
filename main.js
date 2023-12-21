@@ -82,3 +82,22 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+// pop up
+let popup = document.getElementById('popup');
+function openPopup() {
+  popup.classList.add('open-popup');
+}
+function closePopup() {
+  popup.classList.remove('open-popup');
+}
+// activer page footer no.
+function toggleColor(element) {
+  // Remove 'active' class from all elements
+  var allElements = document.querySelectorAll('.footer-links');
+  allElements.forEach(function (el) {
+      el.classList.remove('active');
+  });
+
+  // Add 'active' class to the clicked element
+  element.classList.add('active');
+}
