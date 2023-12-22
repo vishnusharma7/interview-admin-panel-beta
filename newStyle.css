@@ -567,6 +567,8 @@ tr td:nth-child(2){
     z-index: 9999;
     visibility: hidden;
     transition: 0.2s ease-out; 
+    box-shadow: var(--box-shadow);
+   
     
 
 }
@@ -574,6 +576,7 @@ tr td:nth-child(2){
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
+  
 }
 #notification-drop{
     overflow: auto;

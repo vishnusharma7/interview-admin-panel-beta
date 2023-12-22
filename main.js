@@ -84,12 +84,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // pop up
 let popup = document.getElementById('popup');
+
+document.addEventListener('mousedown', function(event) {
+  if (!popup.contains(event.target)) {
+    closePopup();
+  }
+});
+
 function openPopup() {
   popup.classList.add('open-popup');
 }
+
 function closePopup() {
   popup.classList.remove('open-popup');
 }
+
+
 
 
 // active page footer no.
