@@ -641,5 +641,9 @@ background-color: var(--hover);
         font-size: 12px !important;
         white-space: nowrap !important;
     }
+    .p-photo{
+        width: 120px !important;
+    }
+
 }
 
