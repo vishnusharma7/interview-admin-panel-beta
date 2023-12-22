@@ -113,3 +113,12 @@ function toggleColor(element) {
   // Add 'active' class to the clicked element
   element.classList.add('active');
 }
+
+
+var tableRows = document.getElementById('userTable').rows;
+
+for (var i = 0; i < tableRows.length; i++) {
+    var email = tableRows[i].cells[1].textContent.trim();
+    var anchorTag = tableRows[i].querySelector('a');
+    anchorTag.href = 'editprofile.html?email=' + encodeURIComponent(email);
+}
