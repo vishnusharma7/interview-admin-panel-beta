@@ -635,6 +635,11 @@ background-color: var(--hover);
 @media screen and (max-width:480px) {
     .name-head{
         font-size: 18px !important;
+        white-space: nowrap !important;
+    }
+    .name-sub-head{
+        font-size: 12px !important;
+        white-space: nowrap !important;
     }
 }
 
