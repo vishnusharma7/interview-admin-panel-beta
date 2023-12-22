@@ -90,7 +90,9 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove('open-popup');
 }
-// activer page footer no.
+
+
+// active page footer no.
 function toggleColor(element) {
   // Remove 'active' class from all elements
   var allElements = document.querySelectorAll('.footer-links');
