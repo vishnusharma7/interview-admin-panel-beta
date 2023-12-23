@@ -741,19 +741,38 @@
                                 <input class="admin-input" type="email" placeholder="Enter your email address"
                                     style="color:var(--text-color);border-radius:5px;padding:0.8em">
                             </div>
+
                             <div class="flex column s-gap" style="color:var(--text-color);">
-                                <span style="font-size: 15px;font-weight:600">Your Student ID</span>
-                                <input class="admin-input" type="text" placeholder="Enter your student ID"
+                                <span style="font-size: 15px;font-weight:600">Gender</span>
+                                <div class="flex column s-gap">
+                                    <div class="flex middle gap">
+                                        <input type="radio" id="option1" name="radioGroup">
+                                        <label for="option1">Male</label>
+                                    </div>
+                                    <div class="flex middle gap">
+                                        <input type="radio" id="option2" name="radioGroup">
+                                        <label for="option2">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex column s-gap" style="color:var(--text-color);">
+                                <span style="font-size: 15px;font-weight:600">Select Option</span>
+                                <select class="admin-input"
                                     style="color:var(--text-color);border-radius:5px;padding:0.8em">
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </select>
                             </div>
                             <div class="flex column s-gap" style="color:var(--text-color);">
                                 <span style="font-size: 15px;font-weight:600">Date of Birth</span>
-                                <input class="admin-input" type="date" id="dob" name="dob" max="2005-01-01"
+                                <input class="admin-input" type="date" id="dob" name="dob" max="2050-01-01"
                                     style="color:var(--text-color);border-radius:5px;padding:0.8em">
                             </div>
-                            <div class="flex column s-gap" style="color:var(--text-color);">
+                            <div class="flex column s-gap " style="color:var(--text-color);">
                                 <span style="font-size: 15px;font-weight:600">Select Expected Salary</span>
-                                <input class="admin-input" type="range" min="0" max="100" step="1"
+                                <input  type="range" min="0" max="100" step="1" 
                                     style="color:var(--text-color);border-radius:5px;padding:0.8em"
                                     id="expectedSalaryRange">
                                 <div style="display: flex; justify-content: space-between; margin-top: 5px;">
@@ -761,20 +780,6 @@
                                     <span>Max: 90 LPA</span>
                                 </div>
                             </div>
-                            <div class="flex column s-gap" style="color:var(--text-color);">
-                                <span style="font-size: 15px;font-weight:600">Your Graduation Year</span>
-                                <input class="admin-input" type="text" placeholder="Enter your graduation year"
-                                    style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                            </div>
-                            <div class="flex column s-gap" style="color:var(--text-color);">
-                                <span style="font-size: 15px;font-weight:600">Your Advisor's Name</span>
-                                <input class="admin-input" type="text" placeholder="Enter your advisor's name"
-                                    style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                            </div>
-                        
-
-
-
                         </div>
                     </div>
                     <div class="flex column gap" style="min-width: 320px;">
@@ -787,26 +792,34 @@
                                         style="color:var(--text-color);border-radius:5px;padding:0.8em">
                                 </div>
                                 <div class="flex column s-gap" style="color:var(--text-color);">
-                                    <span style="font-size: 15px;font-weight:600">New Password</span>
-                                    <input class="admin-input" type="password" placeholder="Enter your campus"
-                                        style="color:var(--text-color);border-radius:5px;padding:0.8em">
+                                    <span style="font-size: 15px;font-weight:600">Describe Yourself</span>
+                                    <textarea class="admin-input" placeholder="Enter your message"
+                                        style="color:var(--text-color);border-radius:5px;padding:0.8em;"></textarea>
                                 </div>
-                                <div class="flex column s-gap" style="color:var(--text-color);">
-                                    <span style="font-size: 15px;font-weight:600">Confirm Password</span>
-                                    <input class="admin-input" type="password" placeholder="Enter your campus"
-                                        style="color:var(--text-color);border-radius:5px;padding:0.8em">
+    
+                                <div class="flex middle  gap" style="color:var(--text-color);">
+                                    <span style="font-size: 15px;font-weight:600">Are you from India?</span>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                      </label>
                                 </div>
                             </div>
                         </div>
                         <div class="flex column gap">
                             <h3>Address</h3>
-                            <div class="flex column border gap" style="padding: 1.5em;border-radius:5px">
+                            <div class="flex column border gap" style="padding: 1.5em;border-radius:5px;" >
                                 <div class="flex column s-gap" style="color:var(--text-color);">
                                     <span style="font-size: 15px;font-weight:600">Enter full address</span>
                                     <input class="admin-input" type="message" placeholder="Enter your address"
                                         style="color:var(--text-color);border-radius:5px;padding:0.8em">
                                 </div>
                             </div>
+                            <div class="flex middle eq gap end" >
+                            <div class="button-main flex center">Cancel</div>
+                            <div class="button-main flex center">Save</div>
+                        </div>
+
                         </div>
                     </div>
 
