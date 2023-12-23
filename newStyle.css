@@ -551,6 +551,7 @@ tr td button:nth-child(2):hover{
     position: sticky;
     bottom: 0;
     background-color: var(--nav);
+    border-top: 1px solid var(--border-color);
     
 }
 .dropdown-holder {
@@ -722,7 +723,7 @@ background-color: var(--hover);
     border-radius: 50%;
   }
 
-  
+
   /* select */
   select {
     appearance: none; /* Remove default styles */
