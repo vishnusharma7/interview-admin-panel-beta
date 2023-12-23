@@ -14,7 +14,7 @@
     --bg-grey-color: #fafafa;
     --bg-box-color: #f3f3f3;
     --nav: #fcfcfc;
-    --border-color: rgba(233, 229, 229, 0.756);
+    --border-color: rgba(214, 210, 210, 0.938);
     --product-card-shadow: hsla(0, 0%, 0%, 0.14);
     --box-shadow: 0 2px 28px 0 rgb(0, 0, 0, 0.09);
     --transition: 0.5s;
@@ -30,7 +30,7 @@
     --sub-text-color: #cfcfcf;
     --nav: #2A2A2A;
     --border-color: rgba(69, 69, 69, 0.756);
-    --box-shadow: 0 2px 28px 0 rgb(255, 255, 255, 0.01);
+    --box-shadow:  0 -2px 10px rgba(0, 0, 0, 0.5);
     --product-card-shadow: var(--primary-color);
     --message-text-bg: rgba(160, 159, 161, 0.1);
     --transition: 0.5s;
@@ -477,6 +477,7 @@ table {
     color: var(--text-color);
     overflow: auto;
     white-space: nowrap;
+   
 
     
 }
@@ -486,11 +487,12 @@ thead{
  
     font-size: 14px;
     color: var(--sub-text-color);
-    background-color: var(--bg-box-color);
+    background: var(--nav);
     position: sticky;
     top: 0;
     border: none;
     cursor: pointer;
+    box-shadow: var(--box-shadow);
    
 }
 
@@ -498,29 +500,19 @@ thead{
 
 th, td {
     
-    padding: 12px;
+    padding: 1.2em;
     border-bottom: 1px solid var(--border-color);
     text-align: left;
 }
 td{
     font-size: 12px;
 }
-tr th:nth-child(1),tr td:nth-child(1){
-    padding: 1.1em;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-   
-}
+
 tr td:nth-child(1){
-  
     cursor: pointer;
-  
 }
 tr td:nth-child(1):hover{
-  
     text-decoration: underline;
-  
 }
 
 tr td:nth-child(2){
@@ -528,6 +520,18 @@ tr td:nth-child(2){
     font-weight: 500;
     cursor: pointer;
     font-weight: 500;
+}
+tr td button{
+    padding: 0.2em 1em;
+    background: none;
+    color: var(--text-color);
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+tr td button:nth-child(2):hover{
+    background-color: rgba(255, 0, 0, 0.624);
 }
 .footer-links{
     padding: 0.5em 0.8em 0.5em 0.8em;
@@ -546,7 +550,8 @@ tr td:nth-child(2){
     width: 100%;
     position: sticky;
     bottom: 0;
-    background-color: var(--bg-color);
+    background-color: var(--nav);
+    
 }
 .dropdown-holder {
     position: relative;
@@ -754,8 +759,20 @@ input[type="radio"]:checked {
 /* box class */
 .box{
     padding: 1.5rem;
-    margin: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 5px;
     background: var(--nav);
 }
 
+.error-message {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 0, 0, 0.84);
+    margin-top: 5px; /* Space for error message */
+}
+
+.edit-btn{
+    padding: 0.7em;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
