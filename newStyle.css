@@ -722,6 +722,7 @@ background-color: var(--hover);
     border-radius: 50%;
   }
 
+  
   /* select */
   select {
     appearance: none; /* Remove default styles */
