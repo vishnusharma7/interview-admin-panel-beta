@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <span class="loader"></span>
     <!-- navbar -->
     <div class="nav" style="border-bottom:0.5px solid var(--border-color);">
         <div class="nav-content flex between middle" data-aos="fade-down">
@@ -726,8 +727,8 @@
 
         <!-- main content -->
         <main>
-            <div class="flex column" style="padding: 2em 2em 0em 2em;height:calc(100vh - 100px); " id="edit-prof">
-                <div class="flex eq wrap gap">
+            <div class="flex column" style="height:calc(100vh - 100px); " id="edit-prof">
+                <div class="flex eq wrap gap" style="padding: 2em 2em 0em 2em">
                     <div class="flex column gap " style="min-width: 320px;">
                         <h3>Edit Profile</h3>
                         <div class="flex column border gap box" style="padding: 1.5em;border-radius:5px">
@@ -735,13 +736,13 @@
                                 <span style="font-size: 15px;font-weight:600">Your Full Name</span>
                                 <input class="admin-input" type="text" placeholder="Enter your full name"
                                     style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                                    <div class="error-message"></div>
+                                <div class="error-message"></div>
                             </div>
                             <div class="flex column s-gap" style="color:var(--text-color);">
                                 <span style="font-size: 15px;font-weight:600">Your Email</span>
                                 <input class="admin-input" type="email" placeholder="Enter your email address"
                                     style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                                    <div class="error-message"></div>
+                                <div class="error-message"></div>
                             </div>
 
                             <div class="flex column s-gap" style="color:var(--text-color);">
@@ -771,7 +772,7 @@
                                 <span style="font-size: 15px;font-weight:600">Date of Birth</span>
                                 <input class="admin-input" type="date" id="dob" name="dob" max="2050-01-01"
                                     style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                                    <div class="error-message"></div>
+                                <div class="error-message"></div>
                             </div>
                             <div class="flex column s-gap " style="color:var(--text-color);">
                                 <span style="font-size: 15px;font-weight:600">Select Expected Salary</span>
@@ -793,8 +794,8 @@
                                     <span style="font-size: 15px;font-weight:600">Current Password</span>
                                     <input class="admin-input" type="password" placeholder="Enter your campus"
                                         style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                                        <div class="error-message"></div>
-                                    </div>
+                                    <div class="error-message"></div>
+                                </div>
                                 <div class="flex column s-gap" style="color:var(--text-color);">
                                     <span style="font-size: 15px;font-weight:600">Describe Yourself</span>
                                     <textarea class="admin-input" placeholder="Enter your message"
@@ -817,33 +818,37 @@
                                     <span style="font-size: 15px;font-weight:600">Enter full address</span>
                                     <input class="admin-input" type="message" placeholder="Enter your address"
                                         style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                                        <div class="error-message"></div>
-                                        <div class="error-message"></div>     </div>
+                                    <div class="error-message"></div>
+                                    
+                                </div>
                             </div>
                             <div class="flex column border gap box" style="padding: 1.5em;border-radius:5px;">
                                 <div class="flex column s-gap" style="color:var(--text-color);">
                                     <span style="font-size: 15px;font-weight:600">Enter full address</span>
                                     <input class="admin-input" type="message" placeholder="Enter your address"
                                         style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                                        <div class="error-message"></div>
-                                        <div class="error-message"></div>     </div>
+                                    <div class="error-message"></div>
+                                </div>
                             </div>
-                           
+
 
                         </div>
-                
-                        <div class="flex middle eq gap end " style="position: sticky;bottom:0;padding:1em;background:var(--bg-color)">
-                            <div class="edit-btn flex center border" style="background: var(--bg-color);color:var(--text-color)">Cancel</div>
-                            <div class="edit-btn flex center border">Save</div>
-                        </div>
+
+
                     </div>
 
                 </div>
 
-
+                <div class="flex middle gap" id="admin-footer" style="justify-content: flex-end;">
+                    <div class="edit-btn flex center border"
+                        style="background: var(--bg-color);color:var(--text-color)">Cancel</div>
+                    <div class="edit-btn flex center border" onclick="showLoader()">Save</div>
+        
+                </div>
             </div>
-
+       
         </main>
+       
     </div>
 
 

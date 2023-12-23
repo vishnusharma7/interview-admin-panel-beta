@@ -419,7 +419,8 @@ aside{
 main{
     
    width: 100%;
-   overflow: auto;
+  overflow: auto;
+  
 }
 
 .top-links{
@@ -449,6 +450,7 @@ opacity: 1;
     color: var(--text-color);
     cursor: pointer;
     white-space: nowrap;
+    transition: 0.2s;
    
 }
 .admin-input svg{
@@ -457,7 +459,7 @@ opacity: 1;
 
 .admin-input:focus-within {
     border-color: var(--primary-color);
-    box-shadow: 0 0 4px var(--primary-color);
+    box-shadow: 0px 0px 5px var(--primary-color) ;
 }
 
 input,textarea {
@@ -534,9 +536,10 @@ tr td button:nth-child(2):hover{
     background-color: rgba(255, 0, 0, 0.624);
 }
 .footer-links{
-    padding: 0.5em 0.8em 0.5em 0.8em;
+    padding: 0.2em 0.5em 0.2em 0.5em;
     cursor: pointer;
     border-radius: 0.5em;
+    
 }
 .footer-links:hover{
     color: #FFFFFF;
@@ -547,9 +550,10 @@ tr td button:nth-child(2):hover{
     background-color: var(--primary-color); /* Replace with the actual color if --primary-color is not defined */
 }
 #admin-footer{
-    width: 100%;
+
+    padding: 0.5em;
     position: sticky;
-    bottom: 0;
+    bottom: 0rem;
     background-color: var(--nav);
     border-top: 1px solid var(--border-color);
     
@@ -779,4 +783,64 @@ input[type="radio"]:checked {
     cursor: pointer;
     color: #ffffff;
     font-weight: 500;
+    padding-left: 3em;
+    padding-right: 3em;
 }
+/* loader css */
+.loader {
+    width: 48px;
+    height: 48px;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .loader::before , .loader::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 48em;
+    height: 48em;
+    background-image:
+      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
+      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
+      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
+      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
+      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
+      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
+      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
+      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0);
+    background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em,
+                         13em -13em, -13em -13em, 13em 13em, -13em 13em;
+      background-repeat: no-repeat;
+    font-size: 0.5px;
+    border-radius: 50%;
+    animation: blast 1s ease-in infinite;
+  }
+  .loader::after {
+    font-size: 1px;
+    background: var(--primary-color);
+    animation: bounce 1s ease-in infinite;
+  }
+  
+  @keyframes bounce {
+    0% , 100%{ font-size: 0.75px }
+    50% { font-size: 1.5px }
+  }
+  @keyframes blast {
+    0% , 40% {
+      font-size: 0.5px;
+    }
+    70% {
+      opacity: 1;
+      font-size: 4px;
+    }
+     100% {
+       font-size: 6px;
+      opacity: 0;
+    }
+  }

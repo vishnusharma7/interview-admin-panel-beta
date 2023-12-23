@@ -122,3 +122,16 @@ for (var i = 0; i < tableRows.length; i++) {
     var anchorTag = tableRows[i].querySelector('a');
     anchorTag.href = 'editprofile.html?email=' + encodeURIComponent(email);
 }
+
+function showLoader() {
+  // Create loader element
+  var loader = document.querySelector('.loader');
+  
+  // Show the loader
+  loader.style.display = 'flex';
+
+  // Hide the loader after 3 seconds
+  setTimeout(function () {
+    loader.style.display = 'none';
+  }, 3000);
+}
