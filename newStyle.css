@@ -787,10 +787,16 @@ input[type="radio"]:checked {
     padding-right: 3em;
 }
 /* loader css */
-.loader {
+  .loader {
     width: 48px;
     height: 48px;
-    
+    border: 3px dotted #FFF;
+    border-style: solid solid dotted dotted;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -798,50 +804,37 @@ input[type="radio"]:checked {
     
     display: none;
   }
-  .loader::before , .loader::after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% , -50%);
-    width: 48em;
-    height: 48em;
-    background-image:
-      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
-      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
-      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
-      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
-      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
-      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
-      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0),
-      radial-gradient(circle 10px, var(--primary-color) 100%, transparent 0);
-    background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em,
-                         13em -13em, -13em -13em, 13em 13em, -13em 13em;
-      background-repeat: no-repeat;
-    font-size: 0.5px;
-    border-radius: 50%;
-    animation: blast 1s ease-in infinite;
-  }
   .loader::after {
-    font-size: 1px;
-    background: var(--primary-color);
-    animation: bounce 1s ease-in infinite;
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px dotted var(--primary-color);
+    border-style: solid solid dotted;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    animation: rotationBack 1s linear infinite;
+    transform-origin: center center;
   }
-  
-  @keyframes bounce {
-    0% , 100%{ font-size: 0.75px }
-    50% { font-size: 1.5px }
-  }
-  @keyframes blast {
-    0% , 40% {
-      font-size: 0.5px;
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
     }
-    70% {
-      opacity: 1;
-      font-size: 4px;
+    100% {
+      transform: rotate(360deg);
     }
-     100% {
-       font-size: 6px;
-      opacity: 0;
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
     }
-  }
+    100% {
+      transform: rotate(-360deg);
+    }
+  } 
