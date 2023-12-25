@@ -181,7 +181,7 @@ section {
 
 .mobile-view-menu-icon {
     border-radius: 1.5em;
-    background-color: var(--bg-box-color);
+    /* background-color: var(--bg-box-color); */
     cursor: pointer;
     padding: 0.5em;
 
