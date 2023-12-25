@@ -124,14 +124,16 @@ for (var i = 0; i < tableRows.length; i++) {
 }
 
 function showLoader() {
-  // Create loader element
-  var loader = document.querySelector('.loader');
-  
-  // Show the loader
-  loader.style.display = 'flex';
+ // Create loader element
+ var loader = document.querySelector('.loader-container');
+            
+ // Show the loader
+ loader.style.visibility = 'visible';
+ loader.style.opacity = 1;
 
-  // Hide the loader after 3 seconds
-  setTimeout(function () {
-    loader.style.display = 'none';
-  }, 3000);
+ // Hide the loader after 3 seconds
+ setTimeout(function () {
+     loader.style.visibility = 'hidden';
+     loader.style.opacity = 0;
+ }, 3000);
 }

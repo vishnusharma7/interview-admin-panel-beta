@@ -795,7 +795,24 @@ input[type="radio"]:checked {
     padding-right: 3em;
 }
 /* loader css */
-  .loader {
+
+.loader-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(8px); /* Adjust the blur value for background blur */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s;
+}
+
+.loader {
     width: 48px;
     height: 48px;
     border: 3px dotted var(--text-color);
@@ -805,12 +822,7 @@ input[type="radio"]:checked {
     position: relative;
     box-sizing: border-box;
     animation: rotation 2s linear infinite;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-  }
+}
   .loader::after {
     content: '';  
     box-sizing: border-box;
