@@ -5,7 +5,7 @@ const systemMode = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="1
 </svg>`
 const toggleButton = document.createElement('div');
 toggleButton.classList.add('dark-mode-toggle');
-toggleButton.style.cssText = 'position: fixed; top: 0.8em; color:var(--text-color); right: 10em; cursor: pointer;z-index:10; padding: 0.7em; ; background-color: var(--bg-box-color); border-radius:2em; display:flex;align-items: center; transition: var(--transition)';
+toggleButton.style.cssText = 'position: fixed; top: 0.5em; color:var(--text-color); right: 9em; cursor: pointer;z-index:10; padding: 0.5em; ; background-color: var(--bg-box-color); border-radius:2em; display:flex;align-items: center; transition: var(--transition)';
 document.body.appendChild(toggleButton);
 toggleButton.addEventListener('click', (event) => {
   event.preventDefault()

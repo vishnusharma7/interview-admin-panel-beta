@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
     <!-- navbar -->
     <div class="nav" style="border-bottom:0.5px solid var(--border-color);">
         <div class="nav-content flex between middle" data-aos="fade-down">
@@ -46,7 +47,7 @@
             <div class="flex middle center" id="nav-mobile-icon" style="gap: 1em;margin-right:2em">
 
                 <div class="nav-icon flex middle dropdown-holder"
-                    style="padding:0.7em; background-color: var(--bg-box-color); border-radius:2em; display:flex;align-items: center; transition: var(--transition)">
+                    style="padding:0.5em; background-color: var(--bg-box-color); border-radius:2em; display:flex;align-items: center; transition: var(--transition)">
                     <svg class="dropdown-trigger" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                         fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
                         <path
@@ -200,10 +201,9 @@
                                     </div>
                                 </div>
                                 <div class="notification-box flex ">
-                                    <div class="p-image">
+                                    <div class="p-image"> 
                                         <img class="dropdown-trigger" src="assets/profile9.webp" alt=""
                                             style="border-radius: 2em;">
-
                                     </div>
                                     <div class="flex column" style="gap: 0.5em;width:100%;">
                                         <h4>Jessi Samson</h4>
@@ -570,7 +570,7 @@
                             </a>
                         </li>
                         <li class="custom-menu">
-                            <a href="demo.html" class="flex gap middle">
+                            <a href="" class="flex gap middle">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-gear" viewBox="0 0 16 16">
                                     <path
@@ -578,7 +578,7 @@
                                     <path
                                         d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
                                 </svg>
-                                <span>Demo</span>
+                                <span>Setting</span>
                             </a>
                         </li>
                     </ul>
@@ -727,8 +727,8 @@
 
         <!-- main content -->
         <main>
-            <div class="flex column" style="height:calc(100vh - 100px); ">
-                <div class="flex column" style="padding: 2em 2em 0em 2em;">
+            <div class="flex column p gap" style="height:calc(100vh - 95px);padding-bottom:0">
+                <div class="flex column">
                     <div class="flex">
                         <h2>Interviews</h2>
                     </div>
@@ -805,341 +805,393 @@
                     </div>
                 </div>
                 <!-- TABLE CONTENT -->
+                    <table class="box" style="border-radius:none">
+                        <thead>
+                            <tr>
+                                <th data-sort="customer">
+                                    <div class="flex middle"> <input type="checkbox"
+                                            style="margin-right: 0.5em;">CANDIDATES
+                                        <span class="sort-arrows"></span>
+                                    </div>
+                                </th>
+                                <th data-sort="email">EMAIL <span class=" sort-arrows"></span></th>
+                                <th data-sort="orders">ORDERS <span class="sort-arrows"></span></th>
+                                <th data-sort="total-spent">TOTAL-SPENT <span class="sort-arrows"></span></th>
+                                <th data-sort="city">CITY <span class="sort-arrows"></span></th>
+                                <th data-sort="last-seen">LAST SEEN <span class="sort-arrows"></span></th>
+                                <th data-sort="last-order">LAST ORDER <span class="sort-arrows"></span></th>
+                                <th>Edit Detail</th>
+                            </tr>
+                        </thead>
 
-                <table class="box" style="border-radius: 0;">
-                    <thead>
-                        <tr>
-                            <th data-sort="customer">
-                                <div class="flex middle"> <input type="checkbox" style="margin-right: 0.5em;">CANDIDATES
-                                    <span class="sort-arrows"></span>
+
+
+
+                        <tbody id="userTable">
+                            <tr>
+                                <td>
+                                    <div class="flex middle"> <input type="checkbox" style="margin-right: 0.5em;">
+                                        <a href=""> MS Dhoni</a>
+                                    </div>
+                                </td>
+                                <td>as@gmail.com</td>
+                                <td>89</td>
+                                <td>$23,987</td>
+                                <td>Budapest</td>
+                                <td>34 min ago</td>
+                                <td>Dec 12, 12:56</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle">
+                                        <input type="checkbox" style="margin-right: 0.5em;"> <a href="">Rohit Sharma
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>as@gmail.com</td>
+                                <td>89</td>
+                                <td>$23,987</td>
+                                <td>Budapest</td>
+                                <td>34 min ago</td>
+                                <td>Dec 12, 12:56</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Virat Kohli</a></div>
+                                </td>
+                                <td>as@gmail.com</td>
+                                <td>89</td>
+                                <td>$23,987</td>
+                                <td>Budapest</td>
+                                <td>34 min ago</td>
+                                <td>Dec 12, 12:56</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Shreyas Iyer </a></div>
+                                </td>
+                                <td>william.white@email.com</td>
+                                <td>64</td>
+                                <td>$28,543</td>
+                                <td>Seattle</td>
+                                <td>18 min ago</td>
+                                <td>Dec 14, 16:10</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">K.L Rahul </a></div>
+                                </td>
+                                <td>olivia.taylor@email.com</td>
+                                <td>53</td>
+                                <td>$19,876</td>
+                                <td>Miami</td>
+                                <td>25 min ago</td>
+                                <td>Dec 15, 10:30</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Hardik Pandya </a></div>
+                                </td>
+                                <td>liam.davis@email.com</td>
+                                <td>77</td>
+                                <td>$36,987</td>
+                                <td>Denver</td>
+                                <td>12 min ago</td>
+                                <td>Dec 16, 08:45</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Md. Shami </a></div>
+                                </td>
+                                <td>john.doe@email.com</td>
+                                <td>42</td>
+                                <td>$15,678</td>
+                                <td>New York</td>
+                                <td>15 min ago</td>
+                                <td>Dec 15, 14:30</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Ishan Kishan </a></div>
+                                </td>
+                                <td>jane.smith@email.com</td>
+                                <td>75</td>
+                                <td>$32,456</td>
+                                <td>Los Angeles</td>
+                                <td>22 min ago</td>
+                                <td>Dec 14, 12:45</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Jasprit Bumrah </a></div>
+                                </td>
+                                <td>michael.johnson@email.com</td>
+                                <td>33</td>
+                                <td>$8,765</td>
+                                <td>Chicago</td>
+                                <td>40 min ago</td>
+                                <td>Dec 13, 18:20</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Rishabh Pant</a></div>
+                                </td>
+                                <td>emily.brown@email.com</td>
+                                <td>98</td>
+                                <td>$45,321</td>
+                                <td>San Francisco</td>
+                                <td>10 min ago</td>
+                                <td>Dec 16, 09:15</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Crick Fans </a></div>
+                                </td>
+                                <td>william.white@email.com</td>
+                                <td>64</td>
+                                <td>$28,543</td>
+                                <td>Seattle</td>
+                                <td>18 min ago</td>
+                                <td>Dec 14, 16:10</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Olviea Sans</a></div>
+                                </td>
+                                <td>olivia.taylor@email.com</td>
+                                <td>53</td>
+                                <td>$19,876</td>
+                                <td>Miami</td>
+                                <td>25 min ago</td>
+                                <td>Dec 15, 10:30</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">White alacks</a></div>
+                                </td>
+                                <td>liam.davis@email.com</td>
+                                <td>77</td>
+                                <td>$36,987</td>
+                                <td>Denver</td>
+                                <td>12 min ago</td>
+                                <td>Dec 16, 08:45</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Istick French</a></div>
+                                </td>
+                                <td>olivia.taylor@email.com</td>
+                                <td>53</td>
+                                <td>$19,876</td>
+                                <td>Miami</td>
+                                <td>25 min ago</td>
+                                <td>Dec 15, 10:30</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Emily Fry </a></div>
+                                </td>
+                                <td>liam.davis@email.com</td>
+                                <td>77</td>
+                                <td>$36,987</td>
+                                <td>Denver</td>
+                                <td>12 min ago</td>
+                                <td>Dec 16, 08:45</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Indiana jons </a></div>
+                                </td>
+                                <td>olivia.taylor@email.com</td>
+                                <td>53</td>
+                                <td>$19,876</td>
+                                <td>Miami</td>
+                                <td>25 min ago</td>
+                                <td>Dec 15, 10:30</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Stray folks</a></div>
+                                </td>
+                                <td>liam.davis@email.com</td>
+                                <td>77</td>
+                                <td>$36,987</td>
+                                <td>Denver</td>
+                                <td>12 min ago</td>
+                                <td>Dec 16, 08:45</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Hyins White </a></div>
+                                </td>
+                                <td>olivia.taylor@email.com</td>
+                                <td>53</td>
+                                <td>$19,876</td>
+                                <td>Miami</td>
+                                <td>25 min ago</td>
+                                <td>Dec 15, 10:30</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
+                                            href="">Jhon White </a></div>
+                                </td>
+                                <td>liam.davis@email.com</td>
+                                <td>77</td>
+                                <td>$36,987</td>
+                                <td>Denver</td>
+                                <td>12 min ago</td>
+                                <td>Dec 16, 08:45</td>
+                                <td><button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                            <!-- we can add here more -->
+                        </tbody>
+
+                        <thead class="table-footer">
+                            <tr>
+                                <td colspan="100%">
+                                    <div class="flex between middle">  <p class="flex middle"
+                                    style="font-size: 13px;font-weight:500;color:var(--sub-text-color);gap:0.5em"> 1 to 10
+                                    <span>item of</span> 15
+                                </p>
+                           
+                                    <div class="flex middle" style="gap: 0.5em;">
+                                        <a href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                            </svg>
+                                        </a>
+                                        <p class="footer-links flex middle center" onclick="toggleColor(this)">1</p>
+                                        <p class="footer-links flex middle center" onclick="toggleColor(this)">2</p>
+                
+                                        <a class="flex middle"
+                                            style="font-size: 13px;font-weight:500;color:var(--primary-color);gap:0.5em" href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                            </th>
-                            <th data-sort="email">EMAIL <span class=" sort-arrows"></span></th>
-                            <th data-sort="orders">ORDERS <span class="sort-arrows"></span></th>
-                            <th data-sort="total-spent">TOTAL-SPENT <span class="sort-arrows"></span></th>
-                            <th data-sort="city">CITY <span class="sort-arrows"></span></th>
-                            <th data-sort="last-seen">LAST SEEN <span class="sort-arrows"></span></th>
-                            <th data-sort="last-order">LAST ORDER <span class="sort-arrows"></span></th>
-                            <th>Edit Detail</th>
-                        </tr>
-                    </thead>
-
-
-
-
-                    <tbody id="userTable">
-                        <tr>
-                            <td>
-                                <div class="flex middle"> <input type="checkbox" style="margin-right: 0.5em;">
-                                    <a href=""> MS Dhoni</a>
-                                </div>
-                            </td>
-                            <td>as@gmail.com</td>
-                            <td>89</td>
-                            <td>$23,987</td>
-                            <td>Budapest</td>
-                            <td>34 min ago</td>
-                            <td>Dec 12, 12:56</td>
-                            <td><button>Edit</button>
-                            <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle">
-                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">Rohit Sharma </a>
-                                </div>
-                            </td>
-                            <td>as@gmail.com</td>
-                            <td>89</td>
-                            <td>$23,987</td>
-                            <td>Budapest</td>
-                            <td>34 min ago</td>
-                            <td>Dec 12, 12:56</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Virat Kohli</a></div>
-                            </td>
-                            <td>as@gmail.com</td>
-                            <td>89</td>
-                            <td>$23,987</td>
-                            <td>Budapest</td>
-                            <td>34 min ago</td>
-                            <td>Dec 12, 12:56</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Shreyas Iyer </a></div>
-                            </td>
-                            <td>william.white@email.com</td>
-                            <td>64</td>
-                            <td>$28,543</td>
-                            <td>Seattle</td>
-                            <td>18 min ago</td>
-                            <td>Dec 14, 16:10</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">K.L Rahul </a></div>
-                            </td>
-                            <td>olivia.taylor@email.com</td>
-                            <td>53</td>
-                            <td>$19,876</td>
-                            <td>Miami</td>
-                            <td>25 min ago</td>
-                            <td>Dec 15, 10:30</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Hardik Pandya </a></div>
-                            </td>
-                            <td>liam.davis@email.com</td>
-                            <td>77</td>
-                            <td>$36,987</td>
-                            <td>Denver</td>
-                            <td>12 min ago</td>
-                            <td>Dec 16, 08:45</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Md. Shami </a></div>
-                            </td>
-                            <td>john.doe@email.com</td>
-                            <td>42</td>
-                            <td>$15,678</td>
-                            <td>New York</td>
-                            <td>15 min ago</td>
-                            <td>Dec 15, 14:30</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Ishan Kishan </a></div>
-                            </td>
-                            <td>jane.smith@email.com</td>
-                            <td>75</td>
-                            <td>$32,456</td>
-                            <td>Los Angeles</td>
-                            <td>22 min ago</td>
-                            <td>Dec 14, 12:45</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Jasprit Bumrah </a></div>
-                            </td>
-                            <td>michael.johnson@email.com</td>
-                            <td>33</td>
-                            <td>$8,765</td>
-                            <td>Chicago</td>
-                            <td>40 min ago</td>
-                            <td>Dec 13, 18:20</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Rishabh Pant</a></div>
-                            </td>
-                            <td>emily.brown@email.com</td>
-                            <td>98</td>
-                            <td>$45,321</td>
-                            <td>San Francisco</td>
-                            <td>10 min ago</td>
-                            <td>Dec 16, 09:15</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Crick Fans </a></div>
-                            </td>
-                            <td>william.white@email.com</td>
-                            <td>64</td>
-                            <td>$28,543</td>
-                            <td>Seattle</td>
-                            <td>18 min ago</td>
-                            <td>Dec 14, 16:10</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Olviea Sans</a></div>
-                            </td>
-                            <td>olivia.taylor@email.com</td>
-                            <td>53</td>
-                            <td>$19,876</td>
-                            <td>Miami</td>
-                            <td>25 min ago</td>
-                            <td>Dec 15, 10:30</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">White alacks</a></div>
-                            </td>
-                            <td>liam.davis@email.com</td>
-                            <td>77</td>
-                            <td>$36,987</td>
-                            <td>Denver</td>
-                            <td>12 min ago</td>
-                            <td>Dec 16, 08:45</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Istick French</a></div>
-                            </td>
-                            <td>olivia.taylor@email.com</td>
-                            <td>53</td>
-                            <td>$19,876</td>
-                            <td>Miami</td>
-                            <td>25 min ago</td>
-                            <td>Dec 15, 10:30</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Emily Fry </a></div>
-                            </td>
-                            <td>liam.davis@email.com</td>
-                            <td>77</td>
-                            <td>$36,987</td>
-                            <td>Denver</td>
-                            <td>12 min ago</td>
-                            <td>Dec 16, 08:45</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Indiana jons </a></div>
-                            </td>
-                            <td>olivia.taylor@email.com</td>
-                            <td>53</td>
-                            <td>$19,876</td>
-                            <td>Miami</td>
-                            <td>25 min ago</td>
-                            <td>Dec 15, 10:30</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Stray folks</a></div>
-                            </td>
-                            <td>liam.davis@email.com</td>
-                            <td>77</td>
-                            <td>$36,987</td>
-                            <td>Denver</td>
-                            <td>12 min ago</td>
-                            <td>Dec 16, 08:45</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Hyins White </a></div>
-                            </td>
-                            <td>olivia.taylor@email.com</td>
-                            <td>53</td>
-                            <td>$19,876</td>
-                            <td>Miami</td>
-                            <td>25 min ago</td>
-                            <td>Dec 15, 10:30</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                        href="">Jhon White </a></div>
-                            </td>
-                            <td>liam.davis@email.com</td>
-                            <td>77</td>
-                            <td>$36,987</td>
-                            <td>Denver</td>
-                            <td>12 min ago</td>
-                            <td>Dec 16, 08:45</td>
-                            <td><button>Edit</button>
-                                <button>Delete</button></td>
-                        </tr>
-                        <!-- we can add here more -->
-                    </tbody>
-
-        
-
-                </table>
-
-                <div class="flex middle between" style="padding:0.8em;width:calc(100% - 1.6em)" id="admin-footer">
-                    <div class="flex middle gap">
-                        <p class="flex middle"
-                            style="font-size: 13px;font-weight:500;color:var(--sub-text-color);gap:0.5em"> 1 to 10
-                            <span>item of</span> 15
-                        </p>
-                        <a class="flex middle"
-                            style="font-size: 13px;font-weight:500;color:var(--primary-color);gap:0.5em" href="">
-                            <span>View all</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                            </svg>
-                        </a>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <!-- <div class="flex middle between" id="admin-footer">
+                        <div class="flex middle gap">
+                            <p class="flex middle"
+                                style="font-size: 13px;font-weight:500;color:var(--sub-text-color);gap:0.5em"> 1 to 10
+                                <span>item of</span> 15
+                            </p>
+                            <a class="flex middle"
+                                style="font-size: 13px;font-weight:500;color:var(--primary-color);gap:0.5em" href="">
+                                <span>View all</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex middle" style="gap: 0.5em;">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                            </a>
+                            <p class="footer-links flex middle center" onclick="toggleColor(this)">1</p>
+                            <p class="footer-links flex middle center" onclick="toggleColor(this)">2</p>
+    
+                            <a class="flex middle"
+                                style="font-size: 13px;font-weight:500;color:var(--primary-color);gap:0.5em" href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="flex middle" style="gap: 0.5em;">
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                                class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                            </svg>
-                        </a>
-                        <p class="footer-links flex middle center" onclick="toggleColor(this)">1</p>
-                        <p class="footer-links flex middle center" onclick="toggleColor(this)">2</p>
-                      
-                        <a class="flex middle"
-                            style="font-size: 13px;font-weight:500;color:var(--primary-color);gap:0.5em" href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div> 
+                 -->
+
+              
             </div>
 
         </main>
