@@ -21,7 +21,7 @@
     <script src="/assets/swiper-bundle.min.js"></script>
 </head>
 
-<body >
+<body>
 
     <!-- navbar -->
     <div class="nav" style="border-bottom:0.5px solid var(--border-color);">
@@ -201,7 +201,7 @@
                                     </div>
                                 </div>
                                 <div class="notification-box flex ">
-                                    <div class="p-image"> 
+                                    <div class="p-image">
                                         <img class="dropdown-trigger" src="assets/profile9.webp" alt=""
                                             style="border-radius: 2em;">
                                     </div>
@@ -590,7 +590,7 @@
                 <div class="flex column gap">
                     <ul class="flex column">
                         <li class="custom-menu">
-                            <a href="users.html" class="flex gap middle">
+                            <a href="" class="flex gap middle">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-speedometer2" viewBox="0 0 16 16">
                                     <path
@@ -598,7 +598,7 @@
                                     <path fill-rule="evenodd"
                                         d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3" />
                                 </svg>
-                                <span>Users</span>
+                                <span>Faq</span>
                             </a>
                         </li>
                         <li class="custom-menu">
@@ -730,26 +730,9 @@
             <div class="flex column p gap" style="height:calc(100vh - 95px);padding-bottom:0">
                 <div class="flex column">
                     <div class="flex">
-                        <h2>Interviews</h2>
+                        <h2>Users</h2>
                     </div>
-                    <div class=" flex gap wrap" style=" margin-top:1.5em; margin-bottom:0.5em">
-                        <div class="top-links ">
-                            <a href="">All <span>(205)</span></a>
-                        </div>
-                        <div class="top-links ">
-                            <a href="">New <span>(20)</span></a>
-                        </div>
-                        <div class="top-links ">
-                            <a href="">Abandoned checkouts <span>(5)</span></a>
-                        </div>
-                        <div class="top-links ">
-                            <a href="">Email subscriber <span>(2054)</span></a>
-                        </div>
-                        <div class="top-links ">
-                            <a href="">Top reviews <span>(2)</span></a>
-                        </div>
-
-                    </div>
+                 
                     <div class="flex middle gap wrap" style="margin-top: 0.5em;">
                         <div class="admin-input flex middle " style="width:fit-content;gap:0.5em; ">
 
@@ -801,358 +784,264 @@
                                 </svg>
                                 <p style="color: #ffffff;">Add candidate</p>
                             </div>
+                            <div class="button admin-input flex middle gap"
+                            style="background-color: var(--primary-color);">
+                          
+                            <p style="color: #ffffff;">Reload</p>
+                        </div>
+                            <div class="button admin-input flex middle gap"
+                            style="background-color: var(--primary-color);">
+                           
+                            <p style="color: #ffffff;">Columns</p>
+                        </div>
                         </div>
                     </div>
                 </div>
                 <!-- TABLE CONTENT -->
-                    <table class="box" style="border-radius:none">
-                        <thead>
-                            <tr>
-                                <th data-sort="customer">
-                                    <div class="flex middle"> <input type="checkbox"
-                                            style="margin-right: 0.5em;">CANDIDATES
-                                        <span class="sort-arrows"></span>
-                                    </div>
-                                </th>
-                                <th data-sort="email">EMAIL <span class=" sort-arrows"></span></th>
-                                <th data-sort="orders">ORDERS <span class="sort-arrows"></span></th>
-                                <th data-sort="total-spent">TOTAL-SPENT <span class="sort-arrows"></span></th>
-                                <th data-sort="city">CITY <span class="sort-arrows"></span></th>
-                                <th data-sort="last-seen">LAST SEEN <span class="sort-arrows"></span></th>
-                                <th data-sort="last-order">LAST ORDER <span class="sort-arrows"></span></th>
-                                <th>Edit Detail</th>
-                            </tr>
-                        </thead>
+                <table class="box" style="border-radius:none">
+                    <thead>
+                        <tr>
+                            <th data-sort="customer">
+                                <div class="flex middle"> <input type="checkbox" style="margin-right: 0.5em;">ID
+                                    <span class="sort-arrows"></span>
+                                </div>
+                            </th>
+                            <th data-sort="email">Photo <span class=" sort-arrows"></span></th>
+                            <th data-sort="orders">User ID <span class="sort-arrows"></span></th>
+                            <th data-sort="total-spent">Name <span class="sort-arrows"></span></th>
+                            <th data-sort="city">Email <span class="sort-arrows"></span></th>
+                            <th data-sort="last-seen">Mobile <span class="sort-arrows"></span></th>
+                            <th data-sort="last-order">Admin <span class="sort-arrows"></span></th>
+                            <th>Last Active On</th>
+                            <th>Created At</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
 
 
 
 
-                        <tbody id="userTable">
-                            <tr>
-                                <td>
-                                    <div class="flex middle"> <input type="checkbox" style="margin-right: 0.5em;">
-                                        <a href=""> MS Dhoni</a>
-                                    </div>
-                                </td>
-                                <td>as@gmail.com</td>
-                                <td>89</td>
-                                <td>$23,987</td>
-                                <td>Budapest</td>
-                                <td>34 min ago</td>
-                                <td>Dec 12, 12:56</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle">
-                                        <input type="checkbox" style="margin-right: 0.5em;"> <a href="">Rohit Sharma
-                                        </a>
-                                    </div>
-                                </td>
-                                <td>as@gmail.com</td>
-                                <td>89</td>
-                                <td>$23,987</td>
-                                <td>Budapest</td>
-                                <td>34 min ago</td>
-                                <td>Dec 12, 12:56</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Virat Kohli</a></div>
-                                </td>
-                                <td>as@gmail.com</td>
-                                <td>89</td>
-                                <td>$23,987</td>
-                                <td>Budapest</td>
-                                <td>34 min ago</td>
-                                <td>Dec 12, 12:56</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Shreyas Iyer </a></div>
-                                </td>
-                                <td>william.white@email.com</td>
-                                <td>64</td>
-                                <td>$28,543</td>
-                                <td>Seattle</td>
-                                <td>18 min ago</td>
-                                <td>Dec 14, 16:10</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">K.L Rahul </a></div>
-                                </td>
-                                <td>olivia.taylor@email.com</td>
-                                <td>53</td>
-                                <td>$19,876</td>
-                                <td>Miami</td>
-                                <td>25 min ago</td>
-                                <td>Dec 15, 10:30</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Hardik Pandya </a></div>
-                                </td>
-                                <td>liam.davis@email.com</td>
-                                <td>77</td>
-                                <td>$36,987</td>
-                                <td>Denver</td>
-                                <td>12 min ago</td>
-                                <td>Dec 16, 08:45</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Md. Shami </a></div>
-                                </td>
-                                <td>john.doe@email.com</td>
-                                <td>42</td>
-                                <td>$15,678</td>
-                                <td>New York</td>
-                                <td>15 min ago</td>
-                                <td>Dec 15, 14:30</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Ishan Kishan </a></div>
-                                </td>
-                                <td>jane.smith@email.com</td>
-                                <td>75</td>
-                                <td>$32,456</td>
-                                <td>Los Angeles</td>
-                                <td>22 min ago</td>
-                                <td>Dec 14, 12:45</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Jasprit Bumrah </a></div>
-                                </td>
-                                <td>michael.johnson@email.com</td>
-                                <td>33</td>
-                                <td>$8,765</td>
-                                <td>Chicago</td>
-                                <td>40 min ago</td>
-                                <td>Dec 13, 18:20</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Rishabh Pant</a></div>
-                                </td>
-                                <td>emily.brown@email.com</td>
-                                <td>98</td>
-                                <td>$45,321</td>
-                                <td>San Francisco</td>
-                                <td>10 min ago</td>
-                                <td>Dec 16, 09:15</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Crick Fans </a></div>
-                                </td>
-                                <td>william.white@email.com</td>
-                                <td>64</td>
-                                <td>$28,543</td>
-                                <td>Seattle</td>
-                                <td>18 min ago</td>
-                                <td>Dec 14, 16:10</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Olviea Sans</a></div>
-                                </td>
-                                <td>olivia.taylor@email.com</td>
-                                <td>53</td>
-                                <td>$19,876</td>
-                                <td>Miami</td>
-                                <td>25 min ago</td>
-                                <td>Dec 15, 10:30</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">White alacks</a></div>
-                                </td>
-                                <td>liam.davis@email.com</td>
-                                <td>77</td>
-                                <td>$36,987</td>
-                                <td>Denver</td>
-                                <td>12 min ago</td>
-                                <td>Dec 16, 08:45</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Istick French</a></div>
-                                </td>
-                                <td>olivia.taylor@email.com</td>
-                                <td>53</td>
-                                <td>$19,876</td>
-                                <td>Miami</td>
-                                <td>25 min ago</td>
-                                <td>Dec 15, 10:30</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Emily Fry </a></div>
-                                </td>
-                                <td>liam.davis@email.com</td>
-                                <td>77</td>
-                                <td>$36,987</td>
-                                <td>Denver</td>
-                                <td>12 min ago</td>
-                                <td>Dec 16, 08:45</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Indiana jons </a></div>
-                                </td>
-                                <td>olivia.taylor@email.com</td>
-                                <td>53</td>
-                                <td>$19,876</td>
-                                <td>Miami</td>
-                                <td>25 min ago</td>
-                                <td>Dec 15, 10:30</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Stray folks</a></div>
-                                </td>
-                                <td>liam.davis@email.com</td>
-                                <td>77</td>
-                                <td>$36,987</td>
-                                <td>Denver</td>
-                                <td>12 min ago</td>
-                                <td>Dec 16, 08:45</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Hyins White </a></div>
-                                </td>
-                                <td>olivia.taylor@email.com</td>
-                                <td>53</td>
-                                <td>$19,876</td>
-                                <td>Miami</td>
-                                <td>25 min ago</td>
-                                <td>Dec 15, 10:30</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="flex middle"><input type="checkbox" style="margin-right: 0.5em;"> <a
-                                            href="">Jhon White </a></div>
-                                </td>
-                                <td>liam.davis@email.com</td>
-                                <td>77</td>
-                                <td>$36,987</td>
-                                <td>Denver</td>
-                                <td>12 min ago</td>
-                                <td>Dec 16, 08:45</td>
-                                <td><button>Edit</button>
-                                    <button>Delete</button>
-                                </td>
-                            </tr>
-                            <!-- we can add here more -->
-                        </tbody>
+                    <tbody id="userTable">
+                  
+                        <tr>
 
-                        <thead class="table-footer">
-                            <tr>
-                                <td colspan="100%">
-                                    <div class="flex between middle">  <p class="flex middle"
-                                    style="font-size: 13px;font-weight:500;color:var(--sub-text-color);gap:0.5em"> 1 to 10
-                                    <span>item of</span> 15
-                                </p>
-                           
+                            <td>
+                                <div class="flex middle">
+                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                    </a>
+                                </div>
+                            </td>
+                            <td><img src="/assets//profile.webp" alt="" style="height:30px; border-radius:0.5em"></td>
+                            <td></td>
+                            <td>
+                               Rohit Sharma
+                            </td>
+                            <td>vs510514@gmail.com</td>
+                            <td>8145764555</td>
+                            <td>Yes</td>
+                            <td>Mar 26 2024 - 0:24AM</td>
+                            <td>May 6 2023 - 1:35AM</td>
+                            <td><button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="flex middle">
+                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                    </a>
+                                </div>
+                            </td>
+                            <td><img src="/assets//profile.webp" alt="" style="height:30px; border-radius:0.5em"></td>
+                            <td></td>
+                            <td>
+                               Rohit Sharma
+                            </td>
+                            <td>vs510514@gmail.com</td>
+                            <td>8145764555</td>
+                            <td>Yes</td>
+                            <td>Mar 26 2024 - 0:24AM</td>
+                            <td>May 6 2023 - 1:35AM</td>
+                            <td><button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="flex middle">
+                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                    </a>
+                                </div>
+                            </td>
+                            <td><img src="/assets//profile.webp" alt="" style="height:30px; border-radius:0.5em"></td>
+                            <td></td>
+                            <td>
+                               Rohit Sharma
+                            </td>
+                            <td>vs510514@gmail.com</td>
+                            <td>8145764555</td>
+                            <td>Yes</td>
+                            <td>Mar 26 2024 - 0:24AM</td>
+                            <td>May 6 2023 - 1:35AM</td>
+                            <td><button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="flex middle">
+                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                    </a>
+                                </div>
+                            </td>
+                            <td><img src="/assets//profile.webp" alt="" style="height:30px; border-radius:0.5em"></td>
+                            <td></td>
+                            <td>
+                               Rohit Sharma
+                            </td>
+                            <td>vs510514@gmail.com</td>
+                            <td>8145764555</td>
+                            <td>Yes</td>
+                            <td>Mar 26 2024 - 0:24AM</td>
+                            <td>May 6 2023 - 1:35AM</td>
+                            <td><button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="flex middle">
+                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                    </a>
+                                </div>
+                            </td>
+                            <td><img src="/assets//profile.webp" alt="" style="height:30px; border-radius:0.5em"></td>
+                            <td></td>
+                            <td>
+                               Rohit Sharma
+                            </td>
+                            <td>vs510514@gmail.com</td>
+                            <td>8145764555</td>
+                            <td>Yes</td>
+                            <td>Mar 26 2024 - 0:24AM</td>
+                            <td>May 6 2023 - 1:35AM</td>
+                            <td><button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="flex middle">
+                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                    </a>
+                                </div>
+                            </td>
+                            <td><img src="/assets//profile.webp" alt="" style="height:30px; border-radius:0.5em"></td>
+                            <td></td>
+                            <td>
+                               Rohit Sharma
+                            </td>
+                            <td>vs510514@gmail.com</td>
+                            <td>8145764555</td>
+                            <td>Yes</td>
+                            <td>Mar 26 2024 - 0:24AM</td>
+                            <td>May 6 2023 - 1:35AM</td>
+                            <td><button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="flex middle">
+                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                    </a>
+                                </div>
+                            </td>
+                            <td><img src="/assets//profile.webp" alt="" style="height:30px; border-radius:0.5em"></td>
+                            <td></td>
+                            <td>
+                               Rohit Sharma
+                            </td>
+                            <td>vs510514@gmail.com</td>
+                            <td>8145764555</td>
+                            <td>Yes</td>
+                            <td>Mar 26 2024 - 0:24AM</td>
+                            <td>May 6 2023 - 1:35AM</td>
+                            <td><button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="flex middle">
+                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                    </a>
+                                </div>
+                            </td>
+                            <td><img src="/assets//profile.webp" alt="" style="height:30px; border-radius:0.5em"></td>
+                            <td></td>
+                            <td>
+                               Rohit Sharma
+                            </td>
+                            <td>vs510514@gmail.com</td>
+                            <td>8145764555</td>
+                            <td>Yes</td>
+                            <td>Mar 26 2024 - 0:24AM</td>
+                            <td>May 6 2023 - 1:35AM</td>
+                            <td><button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                 
+                 
+                      
+                        <!-- we can add here more -->
+                    </tbody>
+
+                    <thead class="table-footer">
+                        <tr>
+                            <td colspan="100%">
+                                <div class="flex between middle">
+                                    <p class="flex middle"
+                                        style="font-size: 13px;font-weight:500;color:var(--sub-text-color);gap:0.5em"> 1
+                                        to 10
+                                        <span>item of</span> 15
+                                    </p>
+
                                     <div class="flex middle" style="gap: 0.5em;">
                                         <a href="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                                                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
                                                     d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                                             </svg>
                                         </a>
                                         <p class="footer-links flex middle center" onclick="toggleColor(this)">1</p>
                                         <p class="footer-links flex middle center" onclick="toggleColor(this)">2</p>
-                
+
                                         <a class="flex middle"
-                                            style="font-size: 13px;font-weight:500;color:var(--primary-color);gap:0.5em" href="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            style="font-size: 13px;font-weight:500;color:var(--primary-color);gap:0.5em"
+                                            href="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
                                                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                             </svg>
                                         </a>
                                     </div>
                                 </div>
-                                </td>
-                            </tr>
-                        </thead>
-                    </table>
-                    <!-- <div class="flex middle between" id="admin-footer">
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+                <!-- <div class="flex middle between" id="admin-footer">
                         <div class="flex middle gap">
                             <p class="flex middle"
                                 style="font-size: 13px;font-weight:500;color:var(--sub-text-color);gap:0.5em"> 1 to 10
@@ -1191,7 +1080,7 @@
                     </div>
                  -->
 
-              
+
             </div>
 
         </main>

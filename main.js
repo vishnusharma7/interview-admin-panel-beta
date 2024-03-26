@@ -118,10 +118,17 @@ function toggleColor(element) {
 var tableRows = document.getElementById('userTable').rows;
 
 for (var i = 0; i < tableRows.length; i++) {
-    var email = tableRows[i].cells[1].textContent.trim();
+    var email = tableRows[i].cells[4].textContent.trim(); 
     var anchorTag = tableRows[i].querySelector('a');
-    anchorTag.href = 'editprofile.html?email=' + encodeURIComponent(email);
+    anchorTag.href = 'profile.html';
+
+    var editButton = tableRows[i].querySelector('button');
+    editButton.addEventListener('click', function() {
+        var email = this.parentNode.previousElementSibling.textContent.trim(); 
+        window.location.href = 'profiledemo.html';
+    });
 }
+
 
 function showLoader() {
  // Create loader element
