@@ -736,7 +736,7 @@
                     <div class="flex column gap" style=" padding: 0.5em; border-right:1px solid var(--border-color)">
                         <ul class="flex column">
                             <li class="custom-menu">
-                                <a href="#" class="flex gap middle">
+                                <a href="profiledemo.html" class="flex gap middle">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-speedometer2" viewBox="0 0 16 16">
                                         <path
@@ -772,7 +772,7 @@
                                 </a>
                             </li>
                             <li class="custom-menu">
-                                <a href="visit.html" class="flex gap middle">
+                                <a href="#" class="flex gap middle">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-list-task" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -799,41 +799,233 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="flex column gap" style="flex:1;">
-                        <div class="flex between middle" style="padding: 1.5em; border-bottom:1px solid var(--border-color)">
-                            <h4>User Information</h4>
-                           
-                        </div>
-                        <div class="flex gap" style="padding: 0.5em;" >
+                    <div class="flex column " style="flex:1;">
+                        <div class="flex between middle"
+                            style="padding: 1.5em; border-bottom:1px solid var(--border-color)">
+                            <h4>Visit Information</h4>
 
-                            <div class="flex column gap" style="flex:1">
-                                <div class="flex column s-gap" style="color:var(--text-color);">
-                                    <span style="font-size: 15px;font-weight:600">User Full name</span>
-                                    <input class="admin-input" type="text" placeholder="Enter your full name" value="Rohit Sharma"
-                                        style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                                    <div class="error-message"></div>
-                                </div>
-                                <div class="flex column s-gap" style="color:var(--text-color);">
-                                    <span style="font-size: 15px;font-weight:600">Your Email</span>
-                                    <input class="admin-input" type="email" placeholder="Enter your email address" value="rohit@gmail.com"
-                                        style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                                    <div class="error-message"></div>
-                                </div>
+                        </div>
+                        <div class="flex gap" style="overflow:auto">
+                            <div class="flex column gap" style="flex:1; ">
+                                <table class="box" style="border-radius:none">
+                                    <thead>
+                                        <tr>
+                                            <th data-sort="customer">
+                                                <div class="flex middle"> <input type="checkbox"
+                                                        style="margin-right: 0.5em;">ID
+                                                    <span class="sort-arrows"></span>
+                                                </div>
+                                            </th>
+                                            <th data-sort="email">Photo <span class=" sort-arrows"></span></th>
+                                            <th data-sort="orders">User ID <span class="sort-arrows"></span></th>
+                                            <th data-sort="total-spent">Name <span class="sort-arrows"></span></th>
+                                            <th data-sort="city">Email <span class="sort-arrows"></span></th>
+                                            <th data-sort="last-seen">Mobile <span class="sort-arrows"></span></th>
+                                            <th data-sort="last-order">Admin <span class="sort-arrows"></span></th>
+                                            <th>Last Active On</th>
+                                            <th>Created At</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+
+
+
+
+                                    <tbody id="userTable">
+
+                                        <tr>
+
+                                            <td>
+                                                <div class="flex middle">
+                                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td><img src="/assets//profile.webp" alt=""
+                                                    style="height:30px; border-radius:0.5em"></td>
+                                            <td></td>
+                                            <td>
+                                                Rohit Sharma
+                                            </td>
+                                            <td>vs510514@gmail.com</td>
+                                            <td>8145764555</td>
+                                            <td>Yes</td>
+                                            <td>Mar 26 2024 - 0:24AM</td>
+                                            <td>May 6 2023 - 1:35AM</td>
+                                            <td><button>Edit</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="flex middle">
+                                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td><img src="/assets//profile.webp" alt=""
+                                                    style="height:30px; border-radius:0.5em"></td>
+                                            <td></td>
+                                            <td>
+                                                Rohit Sharma
+                                            </td>
+                                            <td>vs510514@gmail.com</td>
+                                            <td>8145764555</td>
+                                            <td>Yes</td>
+                                            <td>Mar 26 2024 - 0:24AM</td>
+                                            <td>May 6 2023 - 1:35AM</td>
+                                            <td><button>Edit</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="flex middle">
+                                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td><img src="/assets//profile.webp" alt=""
+                                                    style="height:30px; border-radius:0.5em"></td>
+                                            <td></td>
+                                            <td>
+                                                Rohit Sharma
+                                            </td>
+                                            <td>vs510514@gmail.com</td>
+                                            <td>8145764555</td>
+                                            <td>Yes</td>
+                                            <td>Mar 26 2024 - 0:24AM</td>
+                                            <td>May 6 2023 - 1:35AM</td>
+                                            <td><button>Edit</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="flex middle">
+                                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td><img src="/assets//profile.webp" alt=""
+                                                    style="height:30px; border-radius:0.5em"></td>
+                                            <td></td>
+                                            <td>
+                                                Rohit Sharma
+                                            </td>
+                                            <td>vs510514@gmail.com</td>
+                                            <td>8145764555</td>
+                                            <td>Yes</td>
+                                            <td>Mar 26 2024 - 0:24AM</td>
+                                            <td>May 6 2023 - 1:35AM</td>
+                                            <td><button>Edit</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="flex middle">
+                                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td><img src="/assets//profile.webp" alt=""
+                                                    style="height:30px; border-radius:0.5em"></td>
+                                            <td></td>
+                                            <td>
+                                                Rohit Sharma
+                                            </td>
+                                            <td>vs510514@gmail.com</td>
+                                            <td>8145764555</td>
+                                            <td>Yes</td>
+                                            <td>Mar 26 2024 - 0:24AM</td>
+                                            <td>May 6 2023 - 1:35AM</td>
+                                            <td><button>Edit</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="flex middle">
+                                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td><img src="/assets//profile.webp" alt=""
+                                                    style="height:30px; border-radius:0.5em"></td>
+                                            <td></td>
+                                            <td>
+                                                Rohit Sharma
+                                            </td>
+                                            <td>vs510514@gmail.com</td>
+                                            <td>8145764555</td>
+                                            <td>Yes</td>
+                                            <td>Mar 26 2024 - 0:24AM</td>
+                                            <td>May 6 2023 - 1:35AM</td>
+                                            <td><button>Edit</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="flex middle">
+                                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td><img src="/assets//profile.webp" alt=""
+                                                    style="height:30px; border-radius:0.5em"></td>
+                                            <td></td>
+                                            <td>
+                                                Rohit Sharma
+                                            </td>
+                                            <td>vs510514@gmail.com</td>
+                                            <td>8145764555</td>
+                                            <td>Yes</td>
+                                            <td>Mar 26 2024 - 0:24AM</td>
+                                            <td>May 6 2023 - 1:35AM</td>
+                                            <td><button>Edit</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="flex middle">
+                                                    <input type="checkbox" style="margin-right: 0.5em;"> <a href="">54
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td><img src="/assets//profile.webp" alt=""
+                                                    style="height:30px; border-radius:0.5em"></td>
+                                            <td></td>
+                                            <td>
+                                                Rohit Sharma
+                                            </td>
+                                            <td>vs510514@gmail.com</td>
+                                            <td>8145764555</td>
+                                            <td>Yes</td>
+                                            <td>Mar 26 2024 - 0:24AM</td>
+                                            <td>May 6 2023 - 1:35AM</td>
+                                            <td><button>Edit</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+
+
+
+                                        <!-- we can add here more -->
+                                    </tbody>
+
+                                </table>
                             </div>
-                            <div class="flex column gap" style="flex:1">
-                                <div class="flex column s-gap" style="color:var(--text-color);">
-                                    <span style="font-size: 15px;font-weight:600">Mobile</span>
-                                    <input class="admin-input" type="text" placeholder="Enter your full name" value="5614865975" 
-                                        style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                                    <div class="error-message"></div>
-                                </div>
-                                <div class="flex column s-gap" style="color:var(--text-color);">
-                                    <span style="font-size: 15px;font-weight:600">Your Email</span>
-                                    <input class="admin-input" type="email" placeholder="Enter your email address" value="rohit@gmail.com"
-                                        style="color:var(--text-color);border-radius:5px;padding:0.8em">
-                                    <div class="error-message"></div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 

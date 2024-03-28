@@ -122,7 +122,27 @@ section {
     padding-top: 100px;
     padding-bottom: 70px;
 }
-
+button{
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    background: none;
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+ .outline{
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+}
+.error{
+    background-color: red;
+    color: #FFFFFF;
+}
 /* nav */
 .nav {
     position: sticky;
